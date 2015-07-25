@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+
+development:
+  <<: *default
+  database: portfolio-rails_development
+
+test:
+  <<: *default
+  database: portfolio-rails_test
+
+production:
+  <<: *default
+  database: portfolio-rails_production
+  username: portfolio-rails
+  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
