@@ -20,6 +20,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Assets
 gem 'jquery-rails'
+gem 'foundation-rails'
 gem 'font-awesome-rails'
 
 
