@@ -14,7 +14,28 @@
  *= require_self
  */
 
-@import "foundation_and_overrides";
 @import "font-awesome";
+@import "colors.scss";
 @import "home.scss";
 
+
+/*------------------------------------*\
+    # LAYOUTS
+\*------------------------------------*/
+.content-left {
+  float: left;
+  width: 50%;
+}
+
+.content-right {
+  float: right;
+  width: 50%;
+}
+
+/*------------------------------------*\
+    #SOCIAL ICONS
+\*------------------------------------*/
+.social-icons a {
+  color: unset;
+  font-size: 4em;
+}
