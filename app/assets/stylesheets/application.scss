@@ -15,6 +15,7 @@
  */
 
 @import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import "colors.scss";
 @import "home.scss";
 
@@ -22,14 +23,21 @@
 /*------------------------------------*\
     # LAYOUTS
 \*------------------------------------*/
-.content-left {
-  float: left;
-  width: 50%;
-}
 
-.content-right {
-  float: right;
-  width: 50%;
+
+/*------------------------------------*\
+    #FONTS
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*------------------------------------*\
@@ -38,4 +46,17 @@
 .social-icons a {
   color: unset;
   font-size: 4em;
+}
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+nav {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav li {
+  display: inline-block;
 }
