@@ -31,5 +31,13 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'quiet_assets'
   gem 'binding_of_caller'
+  gem 'capybara'
+  gem 'shoulda'
 end
 
+group :test do
+  gem "rake"
+  gem "vcr"
+  gem "webmock"
+  gem 'simplecov', :require => false
+end
