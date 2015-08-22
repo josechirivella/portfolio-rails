@@ -15,3 +15,4 @@ db/seeds.rb
 .idea
 config/secrets.yml
 .env
+/coverage
