@@ -6,14 +6,14 @@ gem 'rails', '4.2.2'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-
+gem 'spring', group: :development
 
 gem 'rails_12factor', group: :production
 gem 'simple_form'
 gem 'paperclip'
 gem 'paperclip-ffmpeg'
 gem 'devise'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -21,10 +21,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Assets
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-
+gem 'bourbon'
+gem 'neat'
 
 group :development, :test do
-  gem 'spring'
   gem 'better_errors'
   gem 'dotenv-rails'
   gem 'pry-rails'
