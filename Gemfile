@@ -33,6 +33,8 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'capybara'
   gem 'shoulda'
+  gem 'poltergeist'
+  gem 'email_spec'
 end
 
 group :test do
