@@ -16,3 +16,4 @@ db/seeds.rb
 config/secrets.yml
 .env
 /coverage
+/public/assets/
