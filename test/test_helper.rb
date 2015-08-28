@@ -23,10 +23,6 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
   self.use_transactional_fixtures = false
-
-  def logged_in_session
-    { current_user_id: users(:one).id }
-  end
 end
 
 class ActionController::TestCase
@@ -47,11 +43,4 @@ class ActionDispatch::IntegrationTest
 
   include EmailSpec::Helpers
   include EmailSpec::Matchers
-
-  def login(user = users(:one), password = default_password)
-    visit login_path
-    fill_in "Email", with: user.email
-    fill_in "Password", with: password
-    click_button "Login"
-  end
 end

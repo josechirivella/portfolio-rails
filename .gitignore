@@ -12,8 +12,10 @@
 !/log/.keep
 /tmp
 db/seeds.rb
-.idea
+.idea/*
 config/secrets.yml
 .env
-/coverage
+/test/vcr_cassettes
+coverage/
 /public/assets/
+.DS_Store
