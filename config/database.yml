@@ -2,18 +2,22 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: localhost
+  timeout: 5000
 
 development:
   <<: *default
-  database: portfolio-rails_development
+  username: dev
+  password: jrchg24300142
+  database: portfolio_development
 
 test:
   <<: *default
-  database: portfolio-rails_test
+  username: dev
+  password: jrchg24300142
+  database: portfolio_test
 
 production:
   <<: *default
-  database: portfolio-rails_production
-  username: portfolio-rails
+  username: dev
   password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
+  database: portfolio
