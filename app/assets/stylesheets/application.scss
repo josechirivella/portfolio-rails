@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import "colors.scss";
+@import "home.scss";
+
+
+/*------------------------------------*\
+    # LAYOUTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #FONTS
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*\
+    #SOCIAL ICONS
+\*------------------------------------*/
+.social-icons a {
+  color: unset;
+  font-size: 4em;
+}
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+nav {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav li {
+  display: inline-block;
+}

@@ -11,3 +11,11 @@
 /log/*
 !/log/.keep
 /tmp
+db/seeds.rb
+.idea/*
+config/secrets.yml
+.env
+/test/vcr_cassettes
+coverage/
+/public/assets/
+.DS_Store
