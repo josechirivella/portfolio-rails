@@ -1,6 +1,6 @@
 # Jose's portfolio repository
 
-## This is the repo of my Portfolio http://www.jchirivella.com/ *(Coming Soon)* 
+## This is the repo of my Portfolio http://www.jchirivella.com/ 
 
 ### Technologies used on this repo are:
 * Ruby 2.2.0
