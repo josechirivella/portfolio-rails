@@ -16,7 +16,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-
 # Assets
 gem 'jquery-rails'
 gem 'font-awesome-rails'
