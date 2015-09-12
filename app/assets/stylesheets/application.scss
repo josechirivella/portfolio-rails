@@ -10,11 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
 @import "font-awesome";
+@import "bourbon";
+@import "neat";
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import "colors.scss";
 @import "home.scss";
@@ -24,6 +24,20 @@
     # LAYOUTS
 \*------------------------------------*/
 
+/*------------------------------------*\
+    #HTML/BODY
+\*------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
 /*------------------------------------*\
     #FONTS
 \*------------------------------------*/
