@@ -3,38 +3,36 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*------------------------------------*\
-# LAYOUTS
+#               POSITION
 \*------------------------------------*/
+.top-container {
+  z-index: -1;
+  text-align: center;
+  position: absolute;
+}
 
-  .top-container img {
-    @include omega;
-    @include size(100%);
-    z-index: -1;
+  .top-container h2, h4 {
+    z-index: 1;
     text-align: center;
-    position: absolute;
   }
 
-    .top-container {
-      @include span-columns(12)
-    }
-    .top-container h2, h4 {
-      z-index: 1;
-      text-align: center;
-    }
+  .top-container h2{
+    padding-bottom:0.5em;
+  }
+
+  .top-container h4 {
+    padding-top: 0.8em;
+  }
 
     .title {
       @include margin(0 auto);
-      // @include size(100%);
+
+      @include size(25em 1em);
       h2 {
         border-bottom: 1px solid grey;
       }
     }
 
     .social-icons {
-      @include span-columns(12);
       text-align: center;
     }
-
-/*------------------------------------*\
-#
-\*------------------------------------*/

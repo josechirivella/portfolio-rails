@@ -23,6 +23,18 @@
 /*------------------------------------*\
     # LAYOUTS
 \*------------------------------------*/
+.top-container {
+  @include span-columns(12)
+}
+
+  .top-container img {
+    @include omega;
+    @include size(100%);
+  }
+
+    .social-icons {
+      @include span-columns(12);
+    }
 
 /*------------------------------------*\
     #HTML/BODY
