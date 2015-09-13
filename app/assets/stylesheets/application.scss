@@ -31,10 +31,6 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
     margin: 0;
 }
@@ -58,7 +54,9 @@ p {
 \*------------------------------------*/
 .social-icons a {
   color: unset;
-  font-size: 4em;
+}
+.social-icons i {
+  font-size: 3em;
 }
 
 /*------------------------------------*\
