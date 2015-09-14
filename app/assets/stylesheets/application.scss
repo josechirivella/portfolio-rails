@@ -19,23 +19,6 @@
 @import "colors.scss";
 @import "home.scss";
 
-
-/*------------------------------------*\
-    # LAYOUTS
-\*------------------------------------*/
-.top-container {
-  @include span-columns(12)
-}
-
-  .top-container img {
-    @include omega;
-    @include size(100%);
-  }
-
-    .social-icons {
-      @include span-columns(12);
-    }
-
 /*------------------------------------*\
     #HTML/BODY
 \*------------------------------------*/
@@ -44,8 +27,43 @@ html {
 }
 
 body {
-    margin: 0;
+  @include outer-container;
+  margin: 0;
 }
+
+/*------------------------------------*\
+    # LAYOUTS
+\*------------------------------------*/
+.top-container {
+  @include span-columns(12);
+  height: 64vh;
+  max-height: 64vh;
+  position: relative
+}
+
+  .top-container img {
+    @include omega();
+    @include size(100%);
+  }
+
+    .social-icons {
+      @include span-columns(12);
+    }
+
+.about-me-container {
+  @include span-columns(12);
+  position: relative;
+}
+  .story {
+    @include span-columns(4);
+  }
+  .profile-picture {
+    @include span-columns(4);
+  }
+  .personal-info {
+    @include span-columns(4);
+    @include omega();
+  }
 /*------------------------------------*\
     #FONTS
 \*------------------------------------*/
