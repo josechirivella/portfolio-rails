@@ -26,14 +26,13 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  @include outer-container;
-  margin: 0;
-}
-
 /*------------------------------------*\
     # LAYOUTS
 \*------------------------------------*/
+.container {
+  @include outer-container;
+}
+
 .top-container {
   @include span-columns(12);
   height: 64vh;
