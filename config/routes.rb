@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
-  get 'contacts/index'
-
-  get 'contacts/new'
-
-  get 'contacts/create'
-
-  get 'contacts/show'
 
   resources :home
 
   resources :projects
+
+  resources :educations
+
+  resources :experiences
 
   root 'home#index'
 
