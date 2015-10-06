@@ -54,14 +54,29 @@ html {
   position: relative;
 }
   .story {
-    @include span-columns(4);
+    @include span-columns(4 of 12);
   }
   .profile-picture {
-    @include span-columns(4);
+    @include span-columns(4 of 12);
   }
   .personal-info {
-    @include span-columns(4);
+    @include span-columns(4 of 12);
     @include omega();
+  }
+  .skills {
+    @include span-columns(12);
+  }
+
+.resume-container {
+  @include span-columns(12);
+  position: relative;
+}
+  .education {
+    @include span-columns(6 of 12);
+  }
+
+  .experience {
+    @include span-columns(6 of 12);
   }
 /*------------------------------------*\
     #FONTS
