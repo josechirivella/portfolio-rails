@@ -41,7 +41,11 @@
 </div>
 <div class="resume-container">
   <div class="education">
-    
+    <% @education.each do |education| %>
+      <%= education.date %>
+      <%= education.title %>
+      <%= education.description %>
+    <% end %>
   </div>
   <div class="experience">
     
