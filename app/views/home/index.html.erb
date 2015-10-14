@@ -32,7 +32,7 @@
   <div class="personal-info">
     <h5>PERSONAL INFO</h5>
     <ol>
-      <ul>Name <p></p></li>
+      <ul><p>Name </p></ul>
     </ol>
   </div>
   <div class="skills">
@@ -42,12 +42,23 @@
 <div class="resume-container">
   <div class="education">
     <% @education.each do |education| %>
+      <p>
       <%= education.date %>
       <%= education.title %>
       <%= education.description %>
+      </p>
     <% end %>
   </div>
   <div class="experience">
-    
+    <% @experience.each do |experience| %>
+    <p>
+      <%= experience.date %>
+      <%= experience.title %>
+      <%= experience.description %>
+    </p>
+    <% end %>
   </div>
+</div>
+<div class="portfolio-container">
+
 </div>

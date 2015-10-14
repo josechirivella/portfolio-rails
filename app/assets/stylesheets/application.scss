@@ -20,6 +20,11 @@
 @import "home.scss";
 
 /*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+$blue: rgb(41, 128, 195);
+
+/*------------------------------------*\
     #HTML/BODY
 \*------------------------------------*/
 html {
@@ -55,6 +60,7 @@ html {
 }
   .story {
     @include span-columns(4 of 12);
+    text-align: right;
   }
   .profile-picture {
     @include span-columns(4 of 12);
@@ -71,12 +77,16 @@ html {
   @include span-columns(12);
   position: relative;
 }
+
   .education {
     @include span-columns(6 of 12);
+    position: relative;
+    text-align: right;
   }
 
   .experience {
     @include span-columns(6 of 12);
+    position: relative;
   }
 /*------------------------------------*\
     #FONTS
@@ -109,9 +119,9 @@ p {
 nav {
   text-align: center;
 }
-nav a {
-  text-decoration: none;
-}
-nav li {
-  display: inline-block;
-}
+  nav a {
+    text-decoration: none;
+  }
+    nav li {
+      display: inline-block;
+    }
