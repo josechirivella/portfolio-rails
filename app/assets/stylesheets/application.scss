@@ -125,3 +125,17 @@ nav {
     nav li {
       display: inline-block;
     }
+
+/*------------------------------------*\
+    #TYPES OF BORDER
+\*------------------------------------*/
+.border-primary {
+  border-bottom: 1px solid $blue;
+}
+  .border-primary-type-1 {
+    border-left: 2px solid $blue;
+    @include padding(null null null 5px);
+  }
+.border-secondary {
+  border-bottom: 1px solid white;
+}
