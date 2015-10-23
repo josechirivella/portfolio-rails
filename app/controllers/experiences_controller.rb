@@ -14,7 +14,7 @@ class ExperiencesController < ApplicationController
   def create
     @experience = Experience.new(experiences_params)
     if @education.save
-      redirect_to experience_path, success: "You have successfuly created a experience"
+      redirect_to experience_path, success: 'You have successfuly created an experience'
     else
       render :new
     end
@@ -28,7 +28,7 @@ class ExperiencesController < ApplicationController
     @experience = Experience.find(params[:id])
     respond_to do |format|
       if @experience.update(experiences_params)
-        format.html { redirect_to @experience, notice: "The experience has been updated." }
+        format.html { redirect_to @experience, notice: 'The experience has been updated.' }
       else
         format.html { render :edit }
       end
@@ -38,7 +38,7 @@ class ExperiencesController < ApplicationController
   def destroy
     @experience = Experience.find(params[:id])
     @experience.destroy
-    redirect_to experience_path, success: "You have successfuly deleted the experience entry."
+    redirect_to experience_path, success: 'You have successfully deleted the experience entry.'
   end
 
   private
