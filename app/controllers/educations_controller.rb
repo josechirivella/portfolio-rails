@@ -14,7 +14,7 @@ class EducationsController < ApplicationController
   def create
     @education = Education.new(educations_params)
     if @education.save
-      redirect_to education_path, success: "You have successfuly created an education entry."
+      redirect_to education_path, success: 'You have successfully created an education entry.'
     else
       render :new
     end
@@ -27,17 +27,18 @@ class EducationsController < ApplicationController
   def update
     @education = Education.find(params[:id])
     respond_to do |format|
-      if @education(educations_params)
-        format.html { redirect_to @education, notice: "The education has been updated." }
+      if @education.update(educations_params)
+        format.html { redirect_to @education, notice: 'The education has been updated.' }
       else
         format.html { render :edit }
       end
+    end
   end
 
   def destroy
     @education = Education.find(params[:id])
     @education.destroy
-    redirect_to education_path, success: "You have successfuly deleted the education entry."
+    redirect_to education_path, success: 'You have successfully deleted the education entry.'
   end
 
   private
