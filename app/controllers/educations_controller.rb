@@ -27,11 +27,12 @@ class EducationsController < ApplicationController
   def update
     @education = Education.find(params[:id])
     respond_to do |format|
-      if @education(educations_params)
+      if @education.update(educations_params)
         format.html { redirect_to @education, notice: "The education has been updated." }
       else
         format.html { render :edit }
       end
+    end
   end
 
   def destroy

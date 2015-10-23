@@ -27,11 +27,12 @@ class ExperiencesController < ApplicationController
   def update
     @experience = Experience.find(params[:id])
     respond_to do |format|
-      if @experience(experiences_params)
+      if @experience.update(experiences_params)
         format.html { redirect_to @experience, notice: "The experience has been updated." }
       else
         format.html { render :edit }
       end
+    end
   end
 
   def destroy
