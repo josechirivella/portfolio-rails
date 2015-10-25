@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  context "GET home#index" do
+
+    setup { get :index }
+    should render_template('index')
+    should respond_with(:success)
+  end
 end

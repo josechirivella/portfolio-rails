@@ -39,7 +39,4 @@ end
 class ActionDispatch::IntegrationTest
   # Make the Capybara DSL available in all integration tests
   include Capybara::DSL
-
-  include EmailSpec::Helpers
-  include EmailSpec::Matchers
 end
