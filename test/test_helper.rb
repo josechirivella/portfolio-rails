@@ -6,7 +6,6 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara/rails'
 require 'capybara/poltergeist'
-require 'email_spec'
 
 Capybara.server_port = 31337
 Capybara.current_driver = :poltergeist
