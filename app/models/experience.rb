@@ -1,3 +1,3 @@
 class Experience < ActiveRecord::Base
-  belongs_to :resume
+  validates :title, :description, :date, presence: true
 end

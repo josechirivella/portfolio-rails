@@ -32,7 +32,6 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda'
   gem 'poltergeist'
-  gem 'email_spec'
 end
 
 group :test do

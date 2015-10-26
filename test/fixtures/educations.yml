@@ -1,11 +1,9 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: MyString
-  description: MyText
-  date: 2015-10-05
+  title: Front End Developer
+  description: I am a Front End Web Developer...
+  date: 2015-12-12
 
 two:
-  title: MyString
-  description: MyText
+  title: Back End Developer
+  description: I am a Back End Developer...
   date: 2015-10-05

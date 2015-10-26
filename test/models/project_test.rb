@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class ProjectTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  should validate_presence_of(:title)
+  should validate_presence_of(:description)
+  should validate_presence_of(:live_url)
+  should validate_presence_of(:source_code_link)
 end
