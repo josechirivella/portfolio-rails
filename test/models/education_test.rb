@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class EducationTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  should validate_presence_of(:title)
+  should validate_presence_of(:description)
+  should validate_presence_of(:date)
 end

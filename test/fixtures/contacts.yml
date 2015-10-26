@@ -4,10 +4,10 @@ one:
   first_name: Joseph
   last_name: Doe
   email: josephdoe@email.com
-  message: Hello!
+  message: Hello
 
 two:
   first_name: Joanna
   last_name: Doe
   email: joannadoe@email.com
-  message: Bye!
+  message: Bye
