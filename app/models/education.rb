@@ -1,4 +1,4 @@
 class Education < ActiveRecord::Base
-  validates :title, :description, date, presence: true
+  validates :title, :description, :date, presence: true
 
 end
