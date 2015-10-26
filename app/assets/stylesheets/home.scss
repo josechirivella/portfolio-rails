@@ -3,31 +3,49 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*------------------------------------*\
-# LAYOUTS
+#               CONTAINERS
 \*------------------------------------*/
-
-.top-container img {
-    @include omega;
-    @include size(100%);
-    z-index: -1;
-    text-align: center;
-    position: absolute;
+.top-container {
+  z-index: -1;
+  text-align: center;
+  position: absolute;
+  display: block;
 }
 
-    .top-container h2, h4 {
-        z-index: 1;
-        background-image: none;
-        text-align: center;
-        @include span-columns(6);
+  .top-container h2, h5 {
+    z-index: 1;
+    text-align: center;
+  }
+
+  .top-container h2 {
+    padding-bottom:0.5em;
+  }
+
+  .top-container h5 {
+    padding-top: 0.8em;
+  }
+
+    .title {
+      @include margin(0 auto);
+
+      @include size(25em 1em);
+      h2 {
+        border-bottom: 1px solid grey;
+      }
     }
 
-        .title {
-            @include span-columns(4);
-        }
-        .social-icons {
-            @include span-columns(4);
-        }
+    .social-icons {
+      text-align: center;
+    }
 
-/*------------------------------------*\
-#
-\*------------------------------------*/
+.about-me-container h3,h4,h5 {
+  text-align: center;
+}
+
+  .profile-picture img {
+    @include padding(0 3em);
+  }
+
+  .story {
+    float: right;
+  }

@@ -19,10 +19,10 @@
 @import "colors.scss";
 @import "home.scss";
 
-
 /*------------------------------------*\
-    # LAYOUTS
+    #COLORS
 \*------------------------------------*/
+$blue: #2980c3;
 
 /*------------------------------------*\
     #HTML/BODY
@@ -31,13 +31,63 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+/*------------------------------------*\
+    # LAYOUTS
+\*------------------------------------*/
+.container {
+  @include outer-container;
 }
 
-body {
-    margin: 0;
+.top-container {
+  @include span-columns(12);
+  height: 64vh;
+  max-height: 64vh;
+  position: relative
 }
+
+  .top-container img {
+    @include omega();
+    @include size(100%);
+  }
+
+    .social-icons {
+      @include span-columns(12);
+    }
+
+.about-me-container {
+  @include span-columns(12);
+  position: relative;
+}
+  .story {
+    @include span-columns(4 of 12);
+    text-align: right;
+  }
+  .profile-picture {
+    @include span-columns(4 of 12);
+  }
+  .personal-info {
+    @include span-columns(4 of 12);
+    @include omega();
+  }
+  .skills {
+    @include span-columns(12);
+  }
+
+.resume-container {
+  @include span-columns(12);
+  position: relative;
+}
+
+  .education {
+    @include span-columns(6 of 12);
+    position: relative;
+    text-align: right;
+  }
+
+  .experience {
+    @include span-columns(6 of 12);
+    position: relative;
+  }
 /*------------------------------------*\
     #FONTS
 \*------------------------------------*/
@@ -58,7 +108,9 @@ p {
 \*------------------------------------*/
 .social-icons a {
   color: unset;
-  font-size: 4em;
+}
+.social-icons i {
+  font-size: 3em;
 }
 
 /*------------------------------------*\
@@ -67,9 +119,23 @@ p {
 nav {
   text-align: center;
 }
-nav a {
-  text-decoration: none;
+  nav a {
+    text-decoration: none;
+  }
+    nav li {
+      display: inline-block;
+    }
+
+/*------------------------------------*\
+    #TYPES OF BORDER
+\*------------------------------------*/
+.border-primary {
+  border-bottom: 1px solid $blue;
 }
-nav li {
-  display: inline-block;
+  .border-primary-type-1 {
+    border-left: 2px solid $blue;
+    @include padding(null null null 5px);
+  }
+.border-secondary {
+  border-bottom: 1px solid white;
 }
