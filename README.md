@@ -4,14 +4,14 @@
 
 ### Technologies used on this repo are:
 * Ruby 2.2.0
-* Ruby on Rails 4.2.2
+* Ruby on Rails 4.2.4
 * jQuery
 * Paperclip
 * Rails _ Admin
-* Bourbon & Neat (Grid System)
+* Bourbon & Neat (SASS Library & Grid System)
 * Font-Awesome
-* Capybara (Automated Testing)
+* Capybara
+* Shoulda with Minitest
 * Sketch 3
 * PostgreSQL
 * NGINX with Passenger
-
