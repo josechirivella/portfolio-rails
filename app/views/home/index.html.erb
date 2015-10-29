@@ -64,5 +64,9 @@
 </div>
 <div class="portfolio-container">
   <div class="portfolio">
+    <% @project.each do |project| %>
+      <%= project.title %>
+      <%= project.image %>
+    <% end %>
   </div>
 </div>
