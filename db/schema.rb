@@ -54,11 +54,4 @@ ActiveRecord::Schema.define(version: 20151029143021) do
     t.datetime "image_updated_at"
   end
 
-  create_table "resumes", force: :cascade do |t|
-    t.integer  "education_id"
-    t.integer  "experience_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
 end
