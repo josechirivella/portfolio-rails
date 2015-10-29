@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: Joseph
-  last_name: Doe
+  name: John Doe
   email: josephdoe@email.com
   message: Hello
 
 two:
-  first_name: Joanna
-  last_name: Doe
+  name: Joanna Doe
   email: joannadoe@email.com
   message: Bye
