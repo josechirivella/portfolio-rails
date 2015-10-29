@@ -8,3 +8,4 @@ Experience.create!(title: 'Front End Developer - Intern', company: 'Windsor Circ
 
 Project.destroy_all
 Project.create!(title: 'MATI Website', description: 'Redesigned the MATI Website', live_url: 'http://matienergy.com', source_code_link: '')
+Project.create!(title: 'Question Box', description: 'Homework from The Iron Yard', live_url: 'https://questionbox.herokuapp.com/', source_code_link: 'https://github.com/JoseChirivella14/question_box')
