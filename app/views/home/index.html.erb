@@ -43,18 +43,18 @@
 </div>
 <div class="resume-container">
   <div class="education">
-    <% @education.each do |education| %>
+    <% @education.order('date desc').each do |education| %>
       <p>
-      <%= education.date %>
+      <%= education.date.strftime('%m/%d/%Y') %>
       <%= education.title %>
       <%= education.description %>
       </p>
     <% end %>
   </div>
   <div class="experience">
-    <% @experience.each do |experience| %>
+    <% @experience.order('date desc').each do |experience| %>
     <p>
-      <%= experience.date %>
+      <%= experience.date.strftime('%m/%d/%Y') %>
       <%= experience.title %>
       <%= experience.description %>
     </p>
