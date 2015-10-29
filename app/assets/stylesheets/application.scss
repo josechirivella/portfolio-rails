@@ -94,9 +94,12 @@ html {
   position: relative;
 }
   .portfolio {
-    @include span-columns(6 of 12);
     position: relative;
-    @include margin(null auto);
+    p {
+      text-align: center;
+      @include span-columns(3);
+      @include omega(4n);
+    }
   }
 /*------------------------------------*\
     #FONTS
