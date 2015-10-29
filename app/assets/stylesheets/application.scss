@@ -88,6 +88,16 @@ html {
     @include span-columns(6 of 12);
     position: relative;
   }
+
+.portfolio-container {
+  @include span-columns(12);
+  position: relative;
+}
+  .portfolio {
+    @include span-columns(6 of 12);
+    position: relative;
+    @include margin(null auto);
+  }
 /*------------------------------------*\
     #FONTS
 \*------------------------------------*/

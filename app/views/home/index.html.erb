@@ -63,10 +63,13 @@
   </div>
 </div>
 <div class="portfolio-container">
+  <h4>PORTFOLIO</h4>
   <div class="portfolio">
     <% @project.each do |project| %>
-      <%= project.title %>
-      <%= project.image %>
+      <p>
+        <%= project.title %>
+        <%= project.image %>
+      </p>
     <% end %>
   </div>
 </div>
