@@ -48,17 +48,17 @@
   </div>
   <div class="education">
     <% @education.order('date desc').each do |education| %>
-      <li><p><%= education.date.strftime('%m/%d/%Y') %></p></li>
-      <li><p><%= education.title %></p></li>
-      <li><p><%= education.description %></p></li>
+      <p><%= education.date.strftime('%m/%d/%Y') %></p>
+      <p><%= education.title %></p>
+      <p><%= education.description %></p>
     <% end %>
   </div>
   <div class="experience">
     <% @experience.order('date desc').each do |experience| %>
-      <li><p><%= experience.date.strftime('%m/%d/%Y') %></p></li>
-      <li><p><%= experience.title %></p></li>
-      <li><p><%= experience.company %></p></li>
-      <li><p><%= experience.description %></p></li>
+      <p><%= experience.date.strftime('%m/%d/%Y') %></p>
+      <p><%= experience.title %></p>
+      <p><%= experience.company %></p>
+      <p><%= experience.description %></p>
     <% end %>
   </div>
 </div>
