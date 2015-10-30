@@ -9,8 +9,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'spring', group: :development
 gem 'rails_12factor', group: :production
 gem 'simple_form'
-gem 'paperclip'
-gem 'paperclip-ffmpeg'
 gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin'
