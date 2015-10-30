@@ -33,7 +33,7 @@
     <h5>PERSONAL INFO</h5>
       <p class="border-primary-type-1">Name: Jose Chirivella </p>
       <p class="border-primary-type-1">Phone: +1 786.216.3571</p>
-      <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com">joser.chirivella@gmail.com</a></p>
+      <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com" target="_blank">joser.chirivella@gmail.com</a></p>
   </div>
   <div class="skills">
     <h3>MY SKILLS</h3>
@@ -49,14 +49,16 @@
       <p><%= education.date.strftime('%m/%d/%Y') %></p>
       <p><%= education.title %></p>
       <p><%= education.description %></p>
+      <br>
     <% end %>
   </div>
   <div class="experience">
     <% @experience.order('date desc').each do |experience| %>
       <p><%= experience.date.strftime('%m/%d/%Y') %></p>
-      <p><%= experience.title %></p>
       <p><%= experience.company %></p>
+      <p><%= experience.title %></p>
       <p><%= experience.description %></p>
+      <br>
     <% end %>
   </div>
 </div>
