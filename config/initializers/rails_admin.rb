@@ -5,8 +5,7 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_admin)
 
-  ## == Cancan ==
-  config.authorize_with :cancancan
+  config.total_columns_width = 1000
 
   config.actions do
     dashboard                     # mandatory
