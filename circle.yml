@@ -1,3 +1,9 @@
 machine:
   ruby:
     version: 2.2.0
+test:
+  post:
+    - bundle exec rake:
+        environment:
+          RAILS_ENV: test
+          secret_key_base: 4c251ba12f45bdc381b7866df526ee0826d02ad46c47a7a262a4c9487931c1f7cc6e218c6d827804f323e3013ff5f6ef84a76c35ca7eb176a073992a37dad4b7
