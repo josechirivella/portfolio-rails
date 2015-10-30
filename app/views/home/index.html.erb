@@ -31,11 +31,9 @@
   </div>
   <div class="personal-info">
     <h5>PERSONAL INFO</h5>
-    <ol>
-      <ul><p class="border-primary-type-1">Name: Jose Chirivella </p></ul>
-      <ul><p class="border-primary-type-1">Phone: +1 786.216.3571</p></ul>
-      <ul><p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com">joser.chirivella@gmail.com</a></p></ul>
-    </ol>
+      <p class="border-primary-type-1">Name: Jose Chirivella </p>
+      <p class="border-primary-type-1">Phone: +1 786.216.3571</p>
+      <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com">joser.chirivella@gmail.com</a></p>
   </div>
   <div class="skills">
     <h3>MY SKILLS</h3>
@@ -68,10 +66,8 @@
   </div>
   <div class="portfolio">
     <% @project.each do |project| %>
-      <p>
-        <%= project.title %>
+        <p><%= project.title %></p>
         <%= image_tag(project.background_image_url) %>
-      </p>
     <% end %>
   </div>
 </div>
