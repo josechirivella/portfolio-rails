@@ -15,5 +15,5 @@ test:
 production:
   <<: *default
   database: portfolio-rails_production
-  username: portfolio-rails
-  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
+#  username: portfolio-rails
+#  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
