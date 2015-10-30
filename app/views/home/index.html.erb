@@ -66,8 +66,10 @@
   </div>
   <div class="portfolio">
     <% @project.each do |project| %>
-        <p><%= project.title %></p>
+      <p>
+        <%= project.title %>
         <%= image_tag(project.background_image_url) %>
+      </p>
     <% end %>
   </div>
 </div>
