@@ -21,7 +21,7 @@
   <div class="story">
   <h5>SHORT STORY</h5>
     <p>My name is Jose. I'm a Full Stack Web Developer with experience building websites from scratch and
-    manteining current ones. My experience has tough me how important is design to atract user and 
+    manteining current ones. My experience has tough me how important is design to the user and
     encourage the user to stay in our website, that has been my job the past year. Focusing what the user
     wants and redesigning.
     </p>
@@ -32,9 +32,9 @@
   <div class="personal-info">
     <h5>PERSONAL INFO</h5>
     <ol>
-      <ul><p class="border-primary-type-1">Name </p></ul>
-      <ul><p class="border-primary-type-1">Phone</p></ul>
-      <ul><p class="border-primary-type-1">Email</p></ul>
+      <ul><p class="border-primary-type-1">Name: Jose Chirivella </p></ul>
+      <ul><p class="border-primary-type-1">Phone: +1 786.216.3571</p></ul>
+      <ul><p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com">joser.chirivella@gmail.com</a></p></ul>
     </ol>
   </div>
   <div class="skills">
@@ -68,7 +68,7 @@
     <% @project.each do |project| %>
       <p>
         <%= project.title %>
-        <%= project.image %>
+        <div style="background-image: url(<%= project.image %>)"></div>
       </p>
     <% end %>
   </div>
