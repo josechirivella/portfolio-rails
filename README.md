@@ -1,4 +1,5 @@
 # Jose's portfolio repository
+[![Circle CI](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/develop.svg?style=svg)](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/develop)
 
 ## This is the repo of my Portfolio http://www.jchirivella.com/ *(Coming Soon)* 
 
