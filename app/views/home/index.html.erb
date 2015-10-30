@@ -68,7 +68,7 @@
     <% @project.each do |project| %>
       <p>
         <%= project.title %>
-        <div style="background-image: url(<%= project.background_image_url %>)"></div>
+        <%= image_tag(project.background_image_url) %>
       </p>
     <% end %>
   </div>
