@@ -38,32 +38,34 @@
     </ol>
   </div>
   <div class="skills">
-    <h4>MY SKILLS</h4>
+    <h3>MY SKILLS</h3>
+    <br>
   </div>
 </div>
 <div class="resume-container">
+  <div class="title">
+    <h3 class="border-primary">RESUME</h3>
+  </div>
   <div class="education">
     <% @education.order('date desc').each do |education| %>
-      <p>
-      <%= education.date.strftime('%m/%d/%Y') %>
-      <%= education.title %>
-      <%= education.description %>
-      </p>
+      <li><p><%= education.date.strftime('%m/%d/%Y') %></p></li>
+      <li><p><%= education.title %></p></li>
+      <li><p><%= education.description %></p></li>
     <% end %>
   </div>
   <div class="experience">
     <% @experience.order('date desc').each do |experience| %>
-    <p>
-      <%= experience.date.strftime('%m/%d/%Y') %>
-      <%= experience.title %>
-      <%= experience.company %>
-      <%= experience.description %>
-    </p>
+      <li><p><%= experience.date.strftime('%m/%d/%Y') %></p></li>
+      <li><p><%= experience.title %></p></li>
+      <li><p><%= experience.company %></p></li>
+      <li><p><%= experience.description %></p></li>
     <% end %>
   </div>
 </div>
 <div class="portfolio-container">
-  <h4>PORTFOLIO</h4>
+  <div class="title">
+    <h3 class="border-primary">PORTFOLIO</h3>
+  </div>
   <div class="portfolio">
     <% @project.each do |project| %>
       <p>

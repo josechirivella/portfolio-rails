@@ -27,7 +27,7 @@
 
     .title {
       @include margin(0 auto);
-
+      text-align: center;
       @include size(25em 1em);
       h2 {
         border-bottom: 1px solid grey;
