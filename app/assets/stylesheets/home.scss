@@ -6,14 +6,12 @@
 #               CONTAINERS
 \*------------------------------------*/
 .top-container {
-  z-index: -1;
   text-align: center;
   position: absolute;
   display: block;
 }
 
   .top-container h2, h5 {
-    z-index: 1;
     text-align: center;
   }
 
