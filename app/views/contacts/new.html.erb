@@ -1,2 +1,11 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+<div class="contact-container">
+  <h4>CONTACT</h4>
+  <div class="contact">
+    <%= simple_form_for @contact do |f| %>
+      <%= f.input :name, placeholder: 'John Doe', require: true %>
+      <%= f.input :email, placeholder: 'johndoe@domain.com', require: true %>
+      <%= f.input :message, as: :text, require: true %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>

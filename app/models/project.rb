@@ -1,5 +1,4 @@
 class Project < ActiveRecord::Base
 
-
-  has_attached_file :image, :styles => { :medium => "300x000>", :thumb => "100x100>" }
+  validates_presence_of :title, :description, :live_url, :source_code_link, :background_image_url
 end

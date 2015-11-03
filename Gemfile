@@ -2,20 +2,17 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
-gem 'rails', '4.2.2'
+gem 'rails', '4.2.4'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'spring', group: :development
 gem 'rails_12factor', group: :production
 gem 'simple_form'
-gem 'paperclip'
-gem 'paperclip-ffmpeg'
 gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 
 # Assets
 gem 'jquery-rails'
@@ -33,7 +30,6 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda'
   gem 'poltergeist'
-  gem 'email_spec'
 end
 
 group :test do
@@ -42,3 +38,4 @@ group :test do
   gem "webmock"
   gem 'simplecov', :require => false
 end
+

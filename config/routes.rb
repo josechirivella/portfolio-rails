@@ -1,18 +1,20 @@
 Rails.application.routes.draw do
-  get 'contacts/index'
-
-  get 'contacts/new'
-
-  get 'contacts/create'
-
-  get 'contacts/show'
 
   resources :home
 
   resources :projects
 
-  root 'home#index'
+  resources :educations
 
+  resources :experiences
+
+  resources :contacts
+
+  devise_for :admins
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

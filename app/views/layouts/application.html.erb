@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Jose Chirivella portfolio" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Jose Chirivella's portfolio" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -19,6 +19,10 @@
 				<!--<li><a href="#">Resume</a></li>-->
 			<!--</ul>-->
 		<!--</nav>-->
-  <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+    <%= yield %>
+  </div>
   </body>
 </html>

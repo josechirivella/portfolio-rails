@@ -3,22 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*------------------------------------*\
-    # LAYOUTS
+#               CONTAINERS
 \*------------------------------------*/
 .top-container {
   text-align: center;
+  position: absolute;
+  display: block;
 }
 
-  .top-container img {
-    height: 100vh;
-
+  .top-container h2, h5 {
+    text-align: center;
   }
 
-  .top-container h2, h4 {
-    position: relative;
-    background-image: none;
+  .top-container h2 {
+    padding-bottom:0.5em;
   }
 
-/*------------------------------------*\
-  #
-\*------------------------------------*/
+  .top-container h5 {
+    padding-top: 0.8em;
+  }
+
+    .title {
+      @include margin(0 auto);
+      text-align: center;
+      @include size(25em 1em);
+      h2 {
+        border-bottom: 1px solid grey;
+      }
+    }
+
+.about-me-container h3,h4,h5 {
+  text-align: center;
+}
+
+  .profile-picture img {
+    @include padding(0 3em);
+  }
+
+  .story {
+    float: right;
+  }
