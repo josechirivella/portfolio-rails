@@ -32,8 +32,11 @@
       }
     }
 
-.about-me-container h3,h4,h5 {
-  text-align: center;
+.about-me-container {
+  background-color: $jose-grey;
+  h3,h4,h5 {
+    text-align: center;
+  }
 }
 
   .profile-picture img {
@@ -43,3 +46,7 @@
   .story {
     float: right;
   }
+
+.portfolio-container {
+  background-color: $jose-darkgrey;
+}

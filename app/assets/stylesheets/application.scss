@@ -12,7 +12,7 @@
  *
  */
 
-@import "font-awesome";
+@import "font-awesome.css.erb";
 @import "bourbon";
 @import "neat";
 @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -20,11 +20,6 @@
 @import "home.scss";
 @import "contacts.scss";
 @import "projects.scss";
-
-/*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-$blue: #2980c3;
 
 /*------------------------------------*\
     #HTML/BODY
@@ -142,15 +137,25 @@ nav {
     }
 
 /*------------------------------------*\
-    #TYPES OF BORDER
+    # BORDER'S TYPE
 \*------------------------------------*/
 .border-primary {
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid $jose-blue;
 }
   .border-primary-type-1 {
-    border-left: 2px solid $blue;
+    border-left: 2px solid $jose-blue;
     @include padding(null null null 5px);
   }
 .border-secondary {
   border-bottom: 1px solid white;
+}
+
+/*------------------------------------*\
+    # BOX TYPES
+\*------------------------------------*/
+.box-blue {
+  display: inline-block;
+  background: $jose-blue;
+  padding: 5px;
+  color: #eeeeee;
 }

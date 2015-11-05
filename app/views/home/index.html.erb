@@ -45,17 +45,19 @@
     <h3 class="border-primary">RESUME</h3>
   </div>
   <div class="education">
+    <h4>Education</h4>
     <% @education.order('date desc').each do |education| %>
       <p><%= education.date.strftime('%m/%d/%Y') %></p>
-      <p><%= education.title %></p>
+      <p class="box-blue"><%= education.title %></p>
       <p><%= education.description %></p>
       <br>
     <% end %>
   </div>
   <div class="experience">
+    <h4>Experience</h4>
     <% @experience.order('date desc').each do |experience| %>
       <p><%= experience.date.strftime('%m/%d/%Y') %></p>
-      <p><%= experience.company %></p>
+      <p class="box-blue"><%= experience.company %></p>
       <p><%= experience.title %></p>
       <p><%= experience.description %></p>
       <br>
