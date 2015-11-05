@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: Windsor
+  title: Front End Developer
+  company: Windsor Circle
   description: Durham, NC
-  date: 2015-05-01
+  from_date: May 1, 2015
+  until: September 30, 2015
 
 two:
-  title: MATI
+  title: Lead Software Developer
+  company: MATI Energy
   description: Durham, NC
-  date: 2015-02-19
+  from_date: February 20, 2015
+  until: November 30, 2015

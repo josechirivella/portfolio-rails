@@ -6,13 +6,13 @@ Education.create!(title: 'The Iron Yard', description: 'Ruby on Rails Engineerin
 Education.create!(title: 'Instituto Educacional Juan XXIII', description: 'High School Science Diploma', date: 'Juny 06, 2012')
 
 Experience.destroy_all
-Experience.create!(title: 'Lead Software Developer', company: 'MATI Energy', description: "Redesigned the MATI Website from scratch using Ruby on Rails. Scrum Master using Trello. Configured Ubuntu Server, NGINX with Passenger for deployment and PostgreSQL as database. Created and configured a CMS to modify the content of the website without editing the code. Configured AWS S3 for storage. Developed an easier way to apply for a job in MATI Website. Developed job management system in the CMS, in which the resumes are being storage on AWS S3. Created an API for product info page and with AngularJS extracts the JSON data for rendering the content faster. Used Google Maps API, Directions API and Geocoder for Locations page. Designing the E-commerce page for selling the product using QuickBooks Payment tool.", date: 'February 19, 2015')
+Experience.create!(title: 'Lead Software Developer', company: 'MATI Energy', description: "Redesigned the MATI Website from scratch using Ruby on Rails. Scrum Master using Trello. Configured Ubuntu Server, NGINX with Passenger for deployment and PostgreSQL as database. Created and configured a CMS to modify the content of the website without editing the code. Configured AWS S3 for storage. Developed an easier way to apply for a job in MATI Website. Developed job management system in the CMS, in which the resumes are being storage on AWS S3. Created an API for product info page and with AngularJS extracts the JSON data for rendering the content faster. Used Google Maps API, Directions API and Geocoder for Locations page. Designing the E-commerce page for selling the product using QuickBooks Payment tool.", from_date: 'February 20, 2015', until: 'November 30, 2015')
 Experience.create!(title: 'Front End Developer - Intern', company: 'Windsor Circle', description: "Working on the world class Email Marketing Automation Platform. Our web
 application stack includes Backbone, jQuery, LESS, and Marionette.js, built on top of AWS
 using Python's Pyramid web framework.
 Increased application performance by compiling the templates on the server.
 Designed and implemented automated testing with Selenium and Nightwatch.js
-Implementing a new CSS Style Guide.", date: 'May 1, 2015')
+Implementing a new CSS Style Guide.", from_date: 'May 1, 2015', until: 'September 30, 2015')
 
 Project.destroy_all
 Project.create!(title: 'MATI Website', description: 'Redesigned the MATI Website from scratch', live_url: 'http://matienergy.com', source_code_link: 'http://www.matienergy.com', background_image_url: 'https://s3.amazonaws.com/jose-images-personal/portfolio/mati-website-fullscreen.png')

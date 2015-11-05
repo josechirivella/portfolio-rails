@@ -6,9 +6,10 @@
 		<h5>FULL STACK WEB DEVELOPER</h5>
 	</div>
 	<div class="social-icons">
-		<a href="https://github.com/JoseChirivella14"><i class="fa fa-github-square"></i></a>
-		<a href="https://twitter.com/Chiri14"><i class="fa fa-twitter-square"></i></a>
-		<a href="https://linkedin.com/in/josechirivella/"><i class="fa fa-linkedin-square"></i></a>
+		<a href="https://github.com/JoseChirivella14" target="_blank"><i class="fa fa-github"></i></a>
+		<a href="https://twitter.com/Chiri14" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="https://linkedin.com/in/josechirivella/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://medium.com/@josechirivella" target="_blank"><i class="fa fa-medium"></i></a>
 	</div>
 </div>
 <div class="about-me-container">
@@ -47,7 +48,7 @@
   <div class="education">
     <h4>Education</h4>
     <% @education.order('date desc').each do |education| %>
-      <p><%= education.date.strftime('%m/%d/%Y') %></p>
+      <p><i><%= education.date.strftime('%m/%Y') %></i></p>
       <p class="box-blue"><%= education.title %></p>
       <p><%= education.description %></p>
       <br>
@@ -55,8 +56,8 @@
   </div>
   <div class="experience">
     <h4>Experience</h4>
-    <% @experience.order('date desc').each do |experience| %>
-      <p><%= experience.date.strftime('%m/%d/%Y') %></p>
+    <% @experience.order('from_date desc').each do |experience| %>
+      <p><i><%= experience.from_date.strftime('%m/%Y') %> - <%= experience.until.strftime('%m/%Y') %></i></p>
       <p class="box-blue"><%= experience.company %></p>
       <p><%= experience.title %></p>
       <p><%= experience.description %></p>
