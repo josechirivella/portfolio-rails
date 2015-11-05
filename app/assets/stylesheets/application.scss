@@ -120,7 +120,8 @@ p {
   color: unset;
 }
 .social-icons i {
-  font-size: 3em;
+  font-size: 2em;
+  @include padding(null 1%);
 }
 
 /*------------------------------------*\
