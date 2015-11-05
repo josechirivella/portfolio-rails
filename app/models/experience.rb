@@ -1,3 +1,3 @@
 class Experience < ActiveRecord::Base
-  validates :title, :description, :date, presence: true
+  validates_presence_of :title, :company, :description, :from_date, :until
 end

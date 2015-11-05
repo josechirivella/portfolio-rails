@@ -47,7 +47,7 @@
   <div class="education">
     <h4>Education</h4>
     <% @education.order('date desc').each do |education| %>
-      <p><%= education.date.strftime('%m/%d/%Y') %></p>
+      <p><%= education.date.strftime('%m/%Y') %></p>
       <p class="box-blue"><%= education.title %></p>
       <p><%= education.description %></p>
       <br>
@@ -55,8 +55,8 @@
   </div>
   <div class="experience">
     <h4>Experience</h4>
-    <% @experience.order('date desc').each do |experience| %>
-      <p><%= experience.date.strftime('%m/%d/%Y') %></p>
+    <% @experience.order('from_date desc').each do |experience| %>
+      <p><%= experience.from_date.strftime('%m/%Y') %> - <%= experience.until.strftime('%m/%Y') %></p>
       <p class="box-blue"><%= experience.company %></p>
       <p><%= experience.title %></p>
       <p><%= experience.description %></p>
