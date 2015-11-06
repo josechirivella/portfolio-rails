@@ -1,10 +1,10 @@
 <div class="top-container">
 	<div class="title">
 		<h2>JOSE CHIRIVELLA</h2>
+    <div class="subtitle">
+      <h5>FULL STACK WEB DEVELOPER</h5>
+    </div>
   </div>
-  <div class="subtitle">
-		<h5>FULL STACK WEB DEVELOPER</h5>
-	</div>
 	<div class="social-icons">
 		<a href="https://github.com/JoseChirivella14" target="_blank"><i class="fa fa-github"></i></a>
 		<a href="https://twitter.com/Chiri14" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -15,9 +15,9 @@
 <div class="about-me-container">
   <div class="title">
     <h3 class="border-primary">ABOUT ME</h3>
-  </div>
-  <div class="subtitle">
-    <h5>I'M GLAD TO MEET YOU</h5>
+    <div class="subtitle">
+      <h5>I'M GLAD TO MEET YOU</h5>
+    </div>
   </div>
   <div class="story">
   <h5>SHORT STORY</h5>
@@ -46,7 +46,7 @@
     <h3 class="border-primary">RESUME</h3>
   </div>
   <div class="education">
-    <h4>Education</h4>
+    <h4>Education<i class="fa fa-graduation-cap"></i></h4>
     <% @education.order('date desc').each do |education| %>
       <p><i><%= education.date.strftime('%m/%Y') %></i></p>
       <p class="box-blue"><%= education.title %></p>
@@ -55,7 +55,7 @@
     <% end %>
   </div>
   <div class="experience">
-    <h4>Experience</h4>
+    <h4><i class="fa fa-suitcase"></i>Experience</h4>
     <% @experience.order('from_date desc').each do |experience| %>
       <p><i><%= experience.from_date.strftime('%m/%Y') %> - <%= experience.until.strftime('%m/%Y') %></i></p>
       <p class="box-blue"><%= experience.company %></p>
