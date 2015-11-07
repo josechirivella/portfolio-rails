@@ -7,7 +7,6 @@
 * Ruby 2.2.0
 * Ruby on Rails 4.2.4
 * jQuery
-* Paperclip
 * Rails _ Admin
 * Bourbon & Neat (SASS Library & Grid System)
 * Font-Awesome
