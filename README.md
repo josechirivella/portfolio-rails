@@ -8,6 +8,7 @@
 * Ruby on Rails 4.2.4
 * jQuery
 * Rails _ Admin
+* Devise
 * Bourbon & Neat (SASS Library & Grid System)
 * Font-Awesome
 * Capybara
