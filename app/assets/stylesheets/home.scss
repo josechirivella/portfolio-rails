@@ -58,3 +58,22 @@
 .portfolio-container {
   background-color: $jose-darkgrey;
 }
+
+// Modal
+
+/* Making sure that the modal window is hidden by defaul and on top of all other elements on the website. */
+.modalwindow {
+  position:fixed;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+/* Customize your modal window here, you can add background image too */
+#modal {
+  width:500px;
+  height:203px;
+  background: #dd3333;
+}
