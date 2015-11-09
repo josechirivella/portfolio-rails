@@ -72,9 +72,12 @@
   <div class="portfolio">
     <% @project.each do |project| %>
       <p>
-        <%= project.title %>
-        <%= image_tag(project.background_image_url) %>
+        <a href="#modal" name="modal"><%= image_tag(project.background_image_url) %></a>
       </p>
+      <div id="modal" class="modalwindow">
+        <b>Hi</b>
+        <a href="#" class="close">Close it</a>
+      </div>
     <% end %>
   </div>
 </div>
