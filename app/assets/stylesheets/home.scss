@@ -63,7 +63,7 @@
 
 /* Making sure that the modal window is hidden by defaul and on top of all other elements on the website. */
 .modalwindow {
-  position:fixed;
+  @include position(fixed, 50px  null null 100px);
   width:440px;
   height:200px;
   display:none;
@@ -73,7 +73,7 @@
 
 /* Customize your modal window here, you can add background image too */
 #modal {
-  width:500px;
-  height:203px;
-  background: #dd3333;
+  width:80%;
+  height:80%;
+  background: $jose-grey
 }
