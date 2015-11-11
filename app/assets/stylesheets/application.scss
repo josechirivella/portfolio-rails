@@ -96,7 +96,7 @@ html {
 }
   .portfolio {
     position: relative;
-    p {
+    .projects {
       text-align: center;
       @include span-columns(3);
       @include omega(4n);
@@ -169,7 +169,6 @@ nav {
     # FONT STYLES
 \*------------------------------------*/
 a {
-  text-decoration: none;
   color: unset;
 }
 .p-without-margin p {
