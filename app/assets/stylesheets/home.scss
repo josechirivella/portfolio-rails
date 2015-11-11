@@ -59,9 +59,9 @@
   background-color: $jose-darkgrey;
 }
 
-// Modal
-
-/* Making sure that the modal window is hidden by defaul and on top of all other elements on the website. */
+/*------------------------------------*\
+#               MODALS
+\*------------------------------------*/
 .modalwindow {
   @include position(fixed, 50px  null null 100px);
   @include size(440px 200px);
@@ -70,9 +70,11 @@
   padding:20px;
 }
 
-/* Customize your modal window here, you can add background image too */
 #modal {
   width:80%;
   height:80%;
-  background: $jose-grey
+  background: $jose-grey;
+  .close {
+    float: right;
+  }
 }
