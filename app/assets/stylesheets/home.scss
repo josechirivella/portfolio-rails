@@ -64,8 +64,7 @@
 /* Making sure that the modal window is hidden by defaul and on top of all other elements on the website. */
 .modalwindow {
   @include position(fixed, 50px  null null 100px);
-  width:440px;
-  height:200px;
+  @include size(440px 200px);
   display:none;
   z-index:9999;
   padding:20px;
