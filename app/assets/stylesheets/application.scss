@@ -96,8 +96,8 @@ html {
 }
   .portfolio {
     position: relative;
-    p {
-      text-align: center;
+    .projects {
+      @include padding(0 4em);
       @include span-columns(3);
       @include omega(4n);
     }
@@ -163,4 +163,14 @@ nav {
   background: $jose-blue;
   padding: 5px;
   color: #eeeeee;
+}
+
+/*------------------------------------*\
+    # FONT STYLES
+\*------------------------------------*/
+a {
+  color: unset;
+}
+.p-without-margin p {
+  @include margin(0);
 }

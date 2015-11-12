@@ -1,16 +1,16 @@
 <div class="top-container">
-	<div class="title">
-		<h2>JOSE CHIRIVELLA</h2>
+  <div class="title">
+    <h2>JOSE CHIRIVELLA</h2>
     <div class="subtitle">
       <h5>FULL STACK WEB DEVELOPER</h5>
     </div>
   </div>
-	<div class="social-icons">
-		<a href="https://github.com/JoseChirivella14" target="_blank"><i class="fa fa-github"></i></a>
-		<a href="https://twitter.com/Chiri14" target="_blank"><i class="fa fa-twitter"></i></a>
-		<a href="https://linkedin.com/in/josechirivella/" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <div class="social-icons">
+    <a href="https://github.com/JoseChirivella14" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/Chiri14" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://linkedin.com/in/josechirivella/" target="_blank"><i class="fa fa-linkedin"></i></a>
     <a href="https://medium.com/@josechirivella" target="_blank"><i class="fa fa-medium"></i></a>
-	</div>
+  </div>
 </div>
 <div class="about-me-container">
   <div class="title">
@@ -20,11 +20,11 @@
     </div>
   </div>
   <div class="story">
-  <h5>SHORT STORY</h5>
+    <h5>SHORT STORY</h5>
     <p>My name is Jose. I'm a Full Stack Web Developer with experience building websites from scratch and
-    manteining current ones. My experience has tough me how important is design to the user and
-    encourage the user to stay in our website, that has been my job the past year. Focusing what the user
-    wants and redesigning.
+      manteining current ones. My experience has tough me how important is design to the user and
+      encourage the user to stay in our website, that has been my job the past year. Focusing what the user
+      wants and redesigning.
     </p>
   </div>
   <div class="profile-picture">
@@ -71,10 +71,9 @@
   </div>
   <div class="portfolio">
     <% @project.each do |project| %>
-      <p>
-        <%= project.title %>
-        <%= image_tag(project.background_image_url) %>
-      </p>
+    <div class="projects">
+      <%= image_tag(project.background_image_url) %>
+    </div>
     <% end %>
   </div>
 </div>
