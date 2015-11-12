@@ -58,23 +58,3 @@
 .portfolio-container {
   background-color: $jose-darkgrey;
 }
-
-/*------------------------------------*\
-#               MODALS
-\*------------------------------------*/
-.modalwindow {
-  @include position(fixed, 50px  null null 100px);
-  @include size(440px 200px);
-  display:none;
-  z-index:9999;
-  padding:20px;
-}
-
-#modal {
-  width:80%;
-  height:80%;
-  background: $jose-grey;
-  .close {
-    float: right;
-  }
-}

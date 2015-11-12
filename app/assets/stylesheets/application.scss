@@ -97,7 +97,7 @@ html {
   .portfolio {
     position: relative;
     .projects {
-      text-align: center;
+      @include padding(0 4em);
       @include span-columns(3);
       @include omega(4n);
     }
