@@ -15,7 +15,7 @@
 @import "font-awesome";
 @import "bourbon";
 @import "neat";
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+//@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import "colors.scss";
 @import "home.scss";
 @import "contacts.scss";
@@ -54,12 +54,12 @@ html {
 .about-me-container {
   @include span-columns(12);
   position: relative;
+  min-height: 23em;
 }
   .story {
     @include span-columns(5 of 12);
     width:38%;
     @include shift(0);
-    //@include omega();
     text-align: right;
   }
   .profile-picture {
@@ -173,4 +173,15 @@ a {
 }
 .p-without-margin p {
   @include margin(0);
+}
+
+/*------------------------------------*\
+    # TITLES
+\*------------------------------------*/
+.primary-title {
+  font-weight: bold;
+  line-height: 2em;
+}
+.secondary-title {
+  color: lighten($jose-darkgrey, 20%);
 }
