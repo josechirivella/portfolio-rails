@@ -39,6 +39,14 @@
   }
 }
 
+.education p {
+  @include margin(5px 0);
+}
+
+.experience p {
+  @include margin(5px 0);
+}
+
 .portfolio-container {
   background-color: $jose-darkgrey;
 }
