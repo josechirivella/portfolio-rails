@@ -99,7 +99,7 @@ html {
     .projects {
       @include padding(0 4em);
       @include span-columns(3);
-      @include omega(4n);
+      @include omega(3n);
     }
   }
 /*------------------------------------*\
