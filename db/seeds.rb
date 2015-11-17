@@ -15,5 +15,5 @@ Designed and implemented automated testing with Selenium and Nightwatch.js
 Implementing a new CSS Style Guide.", from_date: 'May 1, 2015', until: 'September 30, 2015')
 
 Project.destroy_all
-Project.create!(title: 'MATI Website', description: 'Redesigned the MATI Website from scratch', live_url: 'http://matienergy.com', source_code_link: 'http://www.matienergy.com', background_image_url: 'https://s3.amazonaws.com/jose-images-personal/portfolio/mati-website-fullscreen.png')
-Project.create!(title: 'Question Box', description: 'Homework for The Iron Yard', live_url: 'https://questionbox.herokuapp.com/', source_code_link: 'https://github.com/JoseChirivella14/question_box', background_image_url: 'https://s3.amazonaws.com/jose-images-personal/portfolio/questionbox-fullscreen.png')
+Project.create!(title: 'MATI Website', description: 'Redesigned the MATI Website from scratch', live_url: 'http://matienergy.com', source_code_link: 'http://www.matienergy.com', background_image_url: 'https://s3.amazonaws.com/jose-images-personal/portfolio/mati-website.png')
+Project.create!(title: 'Question Box', description: 'Homework for The Iron Yard', live_url: 'https://questionbox.herokuapp.com/', source_code_link: 'https://github.com/JoseChirivella14/question_box', background_image_url: 'https://s3.amazonaws.com/jose-images-personal/portfolio/question-box.png')
