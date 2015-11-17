@@ -24,8 +24,11 @@
 /*------------------------------------*\
     #HTML/BODY
 \*------------------------------------*/
-html {
+html, body {
   box-sizing: border-box;
+  margin:0 !important;
+  padding:0 !important;
+  height: 100%;
 }
 
 /*------------------------------------*\
@@ -37,18 +40,20 @@ html {
 
 .top-container {
   @include span-columns(12);
-  height: 64vh;
-  max-height: 64vh;
+  height: 30em;
+  max-height: 30em;
   position: relative;
 }
 
   .top-container img {
     @include omega();
     @include size(100%);
+    position: absolute;
+    z-index: -1;
   }
-
     .social-icons {
       @include margin(null auto);
+      text-align: center;
     }
 
 .about-me-container {
@@ -181,6 +186,11 @@ a {
 /*------------------------------------*\
     # TITLES
 \*------------------------------------*/
+.title {
+  text-align: center;
+  @include margin(0 auto);
+  @include size(25em null);
+}
 .primary-title {
   font-weight: bold;
   line-height: 2em;

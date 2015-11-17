@@ -6,18 +6,28 @@
 #               CONTAINERS
 \*------------------------------------*/
 .top-container {
-  text-align: center;
   position: absolute;
   display: block;
-}
+  .social-icons {
+    @include position(relative, 16em 0 0 0);
+    .fa {
+      color: #eeeeee;
+    }
+  }
   .title {
     @include margin(0 auto);
+    @include position(relative, 8em 0 0 0);
     text-align: center;
     @include size(25em null);
     h2 {
-      border-bottom: 1px solid grey;
+      color: #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+    }
+    .subtitle {
+      color: #eeeeee;
     }
   }
+}
 
 .about-me-container {
   background-color: $jose-grey;
