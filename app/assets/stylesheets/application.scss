@@ -96,10 +96,13 @@ html {
 }
   .portfolio {
     position: relative;
+    width:auto;
+    min-height: 18em;
+    @include margin(0 5em);
     .projects {
-      @include padding(0 4em);
       @include span-columns(3);
       @include omega(3n);
+      @include margin(0 2.5em);
     }
   }
 /*------------------------------------*\
