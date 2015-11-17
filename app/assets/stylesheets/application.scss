@@ -35,7 +35,7 @@ html, body {
     # LAYOUTS
 \*------------------------------------*/
 .container {
-  //@include outer-container;
+  @include outer-container(100%);
 }
 
 .top-container {
