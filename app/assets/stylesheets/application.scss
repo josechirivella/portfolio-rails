@@ -22,53 +22,57 @@
 @import "projects.scss";
 
 /*------------------------------------*\
-    #COLORS
-\*------------------------------------*/
-$blue: #2980c3;
-
-/*------------------------------------*\
     #HTML/BODY
 \*------------------------------------*/
-html {
+html, body {
   box-sizing: border-box;
+  margin:0 !important;
+  padding:0 !important;
+  height: 100%;
 }
 
 /*------------------------------------*\
     # LAYOUTS
 \*------------------------------------*/
 .container {
-  @include outer-container;
+  @include outer-container(100%);
 }
 
 .top-container {
   @include span-columns(12);
-  height: 64vh;
-  max-height: 64vh;
+  height: 30em;
+  max-height: 30em;
   position: relative;
 }
 
   .top-container img {
     @include omega();
     @include size(100%);
+    position: absolute;
+    z-index: -1;
   }
-
     .social-icons {
       @include margin(null auto);
+      text-align: center;
     }
 
 .about-me-container {
   @include span-columns(12);
   position: relative;
+  min-height: 23em;
 }
   .story {
-    @include span-columns(4 of 12);
+    @include span-columns(5 of 12);
+    width:38%;
+    @include shift(0);
     text-align: right;
   }
   .profile-picture {
-    @include span-columns(4 of 12);
+    @include span-columns(2 of 12);
   }
   .personal-info {
     @include span-columns(4 of 12);
+    @include shift(0.5);
     @include omega();
   }
   .skills {
@@ -97,10 +101,13 @@ html {
 }
   .portfolio {
     position: relative;
-    p {
-      text-align: center;
+    width:auto;
+    min-height: 18em;
+    @include margin(0 5em);
+    .projects {
       @include span-columns(3);
-      @include omega(4n);
+      @include omega(3n);
+      @include margin(0 2.5em);
     }
   }
 /*------------------------------------*\
@@ -125,7 +132,8 @@ p {
   color: unset;
 }
 .social-icons i {
-  font-size: 3em;
+  font-size: 2em;
+  @include padding(null 1%);
 }
 
 /*------------------------------------*\
@@ -142,15 +150,51 @@ nav {
     }
 
 /*------------------------------------*\
-    #TYPES OF BORDER
+    # BORDER'S TYPE
 \*------------------------------------*/
 .border-primary {
-  border-bottom: 1px solid $blue;
+  border-bottom: 2px solid $jose-blue;
 }
   .border-primary-type-1 {
-    border-left: 2px solid $blue;
+    border-left: 2px solid $jose-blue;
     @include padding(null null null 5px);
   }
 .border-secondary {
   border-bottom: 1px solid white;
+}
+
+/*------------------------------------*\
+    # BOX TYPES
+\*------------------------------------*/
+.box-blue {
+  display: inline-block;
+  background: $jose-blue;
+  padding: 5px;
+  color: #eeeeee;
+}
+
+/*------------------------------------*\
+    # FONT STYLES
+\*------------------------------------*/
+a {
+  color: unset;
+}
+.p-without-margin p {
+  @include margin(0);
+}
+
+/*------------------------------------*\
+    # TITLES
+\*------------------------------------*/
+.title {
+  text-align: center;
+  @include margin(0 auto);
+  @include size(25em null);
+}
+.primary-title {
+  font-weight: bold;
+  line-height: 2em;
+}
+.secondary-title {
+  color: lighten($jose-darkgrey, 20%);
 }
