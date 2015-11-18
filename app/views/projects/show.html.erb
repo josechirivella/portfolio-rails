@@ -1,4 +1,7 @@
-<p><%= @project.title %></p>
-<p><%= @project.description %></p>
-<p><%= @project.live_url %></p>
-<p><%= @project.source_code_link %></p>
+<div class="project">
+  <%= image_tag(@project.background_image_url) %>
+  <p><%= @project.title %></p>
+  <p><%= @project.description %></p>
+  <p><%= @project.live_url %></p>
+  <p><%= @project.source_code_link %></p>
+</div>
