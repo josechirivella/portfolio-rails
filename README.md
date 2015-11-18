@@ -13,6 +13,7 @@
 * Font-Awesome
 * Capybara
 * Shoulda with Minitest
+* CircleCI
 * Sketch 3
 * PostgreSQL
 * NGINX with Passenger

@@ -3,7 +3,6 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  host: localhost
 
 development:
   <<: *default
@@ -16,5 +15,5 @@ test:
 production:
   <<: *default
   database: portfolio_production
-#  username: portfolio-rails
-#  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
+  username: <%= ENV['PORTFOLIO_DB_USER'] %>
+  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
