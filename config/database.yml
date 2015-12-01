@@ -11,6 +11,7 @@ development:
 
 test:
   <<: *default
+  host: localhost
   database: portfolio_test
 
 production:

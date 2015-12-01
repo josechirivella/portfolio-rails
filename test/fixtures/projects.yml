@@ -3,11 +3,13 @@
 one:
   title: MATI
   description: Redesigning
+  advance_description: More description here
   live_url: http://www.matienergy.com
   source_code_link: https://github.com/JoseChirivella14
 
 two:
   title: Portfolio
   description: My portfolio
+  advance_description: More description here 2
   live_url: http://jchirivella.com
   source_code_link: https://github.com/JoseChirivella14
