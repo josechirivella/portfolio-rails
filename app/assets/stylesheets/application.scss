@@ -105,9 +105,9 @@ html, body {
     min-height: 18em;
     @include margin(0 5em);
     .projects {
-      @include span-columns(3);
-      @include omega(3n);
-      @include margin(0 2.5em);
+      width: 33%;
+      display: inline-block;
+      @include margin(0);
     }
   }
 /*------------------------------------*\
