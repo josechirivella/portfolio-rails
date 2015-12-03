@@ -10,5 +10,9 @@
 
 .project img {
   @include size(85% 100%);
-  @include margin(0 auto);
+}
+.img-project {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }

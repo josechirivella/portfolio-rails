@@ -1,7 +1,11 @@
 <div class="project">
-  <%= image_tag(@project.background_image_url) %>
-  <h2><%= @project.title %></h2>
-  <p><%= @project.description %></p>
+  <div class="img-project">
+    <%= image_tag(@project.background_image_url) %>
+  </div>
+  <div class="title">
+    <h2><%= @project.title %></h2>
+    <i><%= @project.description %></i>
+  </div>
   <p><%= @project.advance_description %></p>
   <p><%= link_to @project.title, @project.live_url, :target => '_blank' %></p>
   <p><%= @project.source_code_link %></p>
