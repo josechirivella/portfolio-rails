@@ -16,3 +16,8 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.project-description {
+  width: 85%;
+  @include margin(0 auto);
+}

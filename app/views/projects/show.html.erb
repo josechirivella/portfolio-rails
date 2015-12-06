@@ -7,7 +7,7 @@
     <i><%= @project.description %></i>
   </div>
   <div class="project-description">
-    <p><%= @project.advance_description %></p>
+    <p><%= simple_format(@project.advance_description) %></p>
   </div>
   <p><%= link_to @project.title, @project.live_url, :target => '_blank' %></p>
   <p><%= @project.source_code_link %></p>
