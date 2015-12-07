@@ -1,6 +1,3 @@
-# Admin.destroy_all
-# Admin.create!(email: 'jrchg1403@gmail.com', password: 'joseadmin123')
-#
 # Education.destroy_all
 # Education.create!(title: 'The Iron Yard', description: 'Ruby on Rails Engineering', date: 'December 14, 2014')
 # Education.create!(title: 'Instituto Educacional Juan XXIII', description: 'High School Science Diploma', date: 'Juny 06, 2012')
