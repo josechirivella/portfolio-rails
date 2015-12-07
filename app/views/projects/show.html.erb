@@ -9,10 +9,12 @@
   <div class="project-description">
     <%= simple_format(@project.advance_description) %>
   </div>
-  <p>If you want to visit the website live, here's the <%= link_to 'link', @project.live_url, :target => '_blank' %></p>
-  <% if @project.source_code_link.nil? %>
-    <p>Unfortunately this project has their source code in a private repo so there's nothing to see here :(</p>
-  <% else %>
-    <p>Here's the <%= link_to 'link', @project.source_code_link, :target => '_blank' %> to the repository.</p>
-  <% end %>
+  <div class="project-links">
+    <p>If you want to visit the website live, here's the <%= link_to 'link', @project.live_url, :target => '_blank' %></p>
+    <% if @project.source_code_link.nil? %>
+      <p>Unfortunately this project has their source code in a private repo so there's nothing to see here :(</p>
+    <% else %>
+      <p>Here's the <%= link_to 'link', @project.source_code_link, :target => '_blank' %> to the repository.</p>
+    <% end %>
+  </div>
 </div>

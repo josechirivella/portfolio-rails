@@ -8,8 +8,11 @@
   }
 }
 
-.project img {
-  @include size(85% 100%);
+.project {
+  background-color: $jose-grey;
+  img {
+    @include size(85% 100%);
+  }
 }
 .img-project {
   width: 100%;
@@ -18,6 +21,13 @@
 }
 
 .project-description {
-  width: 60%;
+  width: 80%;
   @include margin(0 auto);
+  text-align: center;
+}
+
+.project-links {
+  width:30%;
+  @include margin(0 auto);
+  text-align: center;
 }
