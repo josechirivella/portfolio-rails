@@ -2,13 +2,7 @@ Rails.application.routes.draw do
 
   resources :home
 
-  resources :projects
-
-  resources :educations
-
-  resources :experiences
-
-  resources :contacts
+  resources :projects, :only => [:show]
 
   devise_for :admins
 

@@ -1,7 +1,20 @@
 <div class="project">
-  <%= image_tag(@project.background_image_url) %>
-  <p><%= @project.title %></p>
-  <p><%= @project.description %></p>
-  <p><%= @project.live_url %></p>
-  <p><%= @project.source_code_link %></p>
+  <div class="img-project">
+    <%= image_tag(@project.background_image_url) %>
+  </div>
+  <div class="title">
+    <h2><%= @project.title %></h2>
+    <i><%= @project.description %></i>
+  </div>
+  <div class="project-description">
+    <%= simple_format(@project.advance_description) %>
+  </div>
+  <div class="project-links">
+    <p>If you want to visit the website live, here's the <%= link_to 'link', @project.live_url, :target => '_blank' %></p>
+    <% if @project.source_code_link.nil? %>
+      <p>Unfortunately this project has their source code in a private repo so there's nothing to see here :(</p>
+    <% else %>
+      <p>Here's the <%= link_to 'link', @project.source_code_link, :target => '_blank' %> to the repository.</p>
+    <% end %>
+  </div>
 </div>
