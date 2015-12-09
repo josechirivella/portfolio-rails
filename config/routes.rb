@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :sitemap, :only => [:index]
+
   resources :home
 
   resources :projects, :only => [:show]
