@@ -41,6 +41,7 @@ RailsAdmin.config do |config|
     list do
       field :title
       field :description
+      field :advance_description
       field :live_url
       field :source_code_link
       field :background_image_url
@@ -48,6 +49,7 @@ RailsAdmin.config do |config|
     edit do
       field :title
       field :description
+      field :advance_description
       field :live_url
       field :source_code_link
       field :background_image_url
