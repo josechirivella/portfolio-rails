@@ -74,7 +74,7 @@
     <h3 class="border-primary primary-title">PORTFOLIO</h3>
   </div>
   <div class="portfolio">
-    <% @project.each do |project| %>
+    <% @project.order('id asc').each do |project| %>
     <div class="projects">
       <%= link_to image_tag(project.background_image_url), project_path(project.id) %>
     </div>
