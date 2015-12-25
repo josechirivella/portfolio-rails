@@ -27,13 +27,15 @@ RailsAdmin.config do |config|
       field :title
       field :company
       field :description
-      field :date
+      field :from_date
+      field :until
     end
     edit do
       field :title
       field :company
       field :description
-      field :date
+      field :from_date
+      field :until
     end
   end
 
