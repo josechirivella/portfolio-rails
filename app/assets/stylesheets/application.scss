@@ -200,7 +200,7 @@ a {
 .title {
   text-align: center;
   @include margin(0 auto);
-  @include size(25em null);
+  @include size(30% null);
 }
 .primary-title {
   font-weight: bold;
@@ -214,8 +214,19 @@ a {
     # Responsive Design
 \*------------------------------------*/
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .social-icons .fa {
+    margin-right: 10px;
+  }
   .title {
-    width:100%;
+    @include size(100% null);
   }
 
   .story {
@@ -224,7 +235,6 @@ a {
     text-align: justify;
     p {
       margin: 1em 1em;
-      font-size: 1.5em;
     }
   }
 
@@ -239,5 +249,43 @@ a {
   .personal-info {
     float: none;
     width:100%;
+    margin: 0;
+  }
+
+  .border-primary-type-1 {
+    margin-left: 2.5em;
+  }
+
+  .education {
+    float: none;
+    margin: 0 1em;
+    width: 92%;
+    text-align: left;
+  }
+
+  .experience {
+    float: none;
+    width: 92%;
+    margin: 0 1em;
+  }
+
+  .portfolio {
+    margin: 0 1em;
+    .projects {
+      width: 100%;
+    }
+  }
+
+  .project {
+    .title {
+      i {
+        margin: 0 1em;
+      }
+    }
+  }
+
+  .project-links {
+    width: 90%;
+    margin: 0 1em;
   }
 }
