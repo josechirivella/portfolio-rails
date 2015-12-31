@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-rails",
+  "version": "1.1.6",
+  "description": "Personal portfolio",
+  "main": "application.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "medium-sdk": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseChirivella14/portfolio-rails.git"
+  },
+  "author": "Jose Chirivella",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseChirivella14/portfolio-rails/issues"
+  },
+  "homepage": "https://github.com/JoseChirivella14/portfolio-rails#readme"
+}
