@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :sitemap, :only => [:index]
 
-  resources :home
+  resources :home, :only => [:index]
 
   resources :projects, :only => [:show]
 
