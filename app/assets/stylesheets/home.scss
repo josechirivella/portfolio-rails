@@ -15,10 +15,7 @@
     }
   }
   .title {
-    @include margin(0 auto);
     @include position(relative, 8em 0 0 0);
-    text-align: center;
-    @include size(25em null);
     h2 {
       color: #eeeeee;
       border-bottom: 2px solid #eeeeee;
