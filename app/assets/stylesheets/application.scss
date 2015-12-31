@@ -201,7 +201,7 @@ a {
 .title {
   text-align: center;
   @include margin(0 auto);
-  @include size(30% null);
+  @include size(30% auto);
 }
 .primary-title {
   font-weight: bold;
@@ -223,7 +223,7 @@ a {
     margin-right: 10px;
   }
   .title {
-    @include size(100% null);
+    @include size(100% auto);
   }
 
   .story {
