@@ -218,14 +218,12 @@ a {
   body {
     font-size: 1.2em;
   }
-
   .social-icons .fa {
     margin-right: 10px;
   }
   .title {
     @include size(100% auto);
   }
-
   .story {
     float: none;
     width:100%;
@@ -234,11 +232,9 @@ a {
       margin: 1em 1em;
     }
   }
-
   .secondary-title {
     text-align: center;
   }
-
   .profile-picture {
     float: none;
     margin-left: 17%;
@@ -248,31 +244,26 @@ a {
     width:100%;
     margin: 0;
   }
-
   .border-primary-type-1 {
     margin-left: 2.5em;
   }
-
   .education {
     float: none;
     margin: 0 1em;
     width: 92%;
     text-align: left;
   }
-
   .experience {
     float: none;
     width: 92%;
     margin: 0 1em;
   }
-
   .portfolio {
     margin: 0 1em;
     .projects {
       width: 100%;
     }
   }
-
   .project {
     .title {
       i {
@@ -280,7 +271,6 @@ a {
       }
     }
   }
-
   .project-links {
     width: 90%;
     margin: 0 1em;
