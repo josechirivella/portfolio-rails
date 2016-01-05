@@ -17,3 +17,5 @@
 * Sketch 3
 * PostgreSQL
 * NGINX with Passenger
+
+## Version 2.0 coming soon. I'm going to post the sketch here.
