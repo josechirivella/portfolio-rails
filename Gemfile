@@ -32,9 +32,9 @@ group :development, :test do
 end
 
 group :test do
-  gem "rake"
-  gem "vcr"
-  gem "webmock"
+  gem 'rake'
+  gem 'vcr'
+  gem 'webmock'
   gem 'simplecov', :require => false
 end
 
