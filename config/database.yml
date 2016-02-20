@@ -6,6 +6,7 @@ default: &default
 
 development:
   <<: *default
+  host: localhost
   database: portfolio_development
 
 test:
