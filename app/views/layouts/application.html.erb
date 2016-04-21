@@ -6,8 +6,8 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "Jose Chirivella's portfolio" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= favicon_link_tag 'favicon.png' %>
     <%= csrf_meta_tags %>
   </head>

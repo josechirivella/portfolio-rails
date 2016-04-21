@@ -11,6 +11,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'bcrypt'
 gem 'rails_admin'
+gem 'dotenv-rails'
 
 group :development do
   gem 'passenger'
@@ -25,7 +26,6 @@ gem 'neat'
 
 group :development, :test do
   gem 'better_errors'
-  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'quiet_assets'
