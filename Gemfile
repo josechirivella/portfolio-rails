@@ -6,12 +6,16 @@ gem 'rails', '4.2.4'
 gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
-gem 'spring', group: :development
 gem 'rails_12factor', group: :production
 gem 'simple_form'
 gem 'devise'
 gem 'bcrypt'
 gem 'rails_admin'
+
+group :development do
+  gem 'passenger'
+  gem 'spring'
+end
 
 # Assets
 gem 'jquery-rails'
