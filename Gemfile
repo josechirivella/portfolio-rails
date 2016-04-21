@@ -4,14 +4,19 @@ ruby '2.2.0'
 
 gem 'rails', '4.2.4'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'spring', group: :development
+gem 'sass-rails'
+gem 'uglifier'
 gem 'rails_12factor', group: :production
 gem 'simple_form'
 gem 'devise'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 gem 'rails_admin'
+gem 'dotenv-rails'
+
+group :development do
+  gem 'passenger'
+  gem 'spring'
+end
 
 # Assets
 gem 'jquery-rails'
@@ -21,7 +26,6 @@ gem 'neat'
 
 group :development, :test do
   gem 'better_errors'
-  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'quiet_assets'
@@ -32,9 +36,9 @@ group :development, :test do
 end
 
 group :test do
-  gem "rake"
-  gem "vcr"
-  gem "webmock"
+  gem 'rake'
+  gem 'vcr'
+  gem 'webmock'
   gem 'simplecov', :require => false
 end
 
