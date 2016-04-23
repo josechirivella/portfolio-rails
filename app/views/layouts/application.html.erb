@@ -3,15 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title><%= content_for?(:title) ? yield(:title) : "Jose Chirivella's portfolio" %></title>
-
     <%= stylesheet_link_tag 'application' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= favicon_link_tag 'favicon.png' %>
     <%= csrf_meta_tags %>
   </head>
-
   <body>
     <i class="notice"><%= notice %></i>
     <i class="alert"><%= alert %></i>
@@ -31,7 +28,6 @@
 
       ga('create', 'UA-69843367-1', 'auto');
       ga('send', 'pageview');
-
     </script>
   <% else %>
   <% end %>
