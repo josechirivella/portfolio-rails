@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to home_path, success: "You have succesfully created."
+      redirect_to home_path, success: 'You have successfully created.'
     else
       render :new
     end
