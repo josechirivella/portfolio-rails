@@ -10,6 +10,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+  <nav>
+    <ul>
+      <li><%= link_to 'Projects', project_path %></li>
+      <li><%= link_to 'Contact', contacts_path %></li>
+    </ul>
+  </nav>
     <i class="notice"><%= notice %></i>
     <i class="alert"><%= alert %></i>
     <div class="container">
