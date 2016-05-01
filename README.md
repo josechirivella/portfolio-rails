@@ -1,9 +1,9 @@
 # Jose's portfolio repository.
-[![Circle CI](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/develop.svg?style=svg)](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/develop)
+[![Circle CI](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/master.svg?style=svg)](https://circleci.com/gh/JoseChirivella14/portfolio-rails/tree/master)
 
 ## This is the repo of my [Portfolio](http://www.jchirivella.com/)
 
-### Technologies used on this repo are:
+### Technologies used on this source code are:
 * Ruby 2.2.0
 * Ruby on Rails 4.2.4
 * jQuery
