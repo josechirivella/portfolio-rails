@@ -17,11 +17,11 @@
   .title {
     @include position(relative, 8em 0 0 0);
     h2 {
-      color: #eeeeee;
-      border-bottom: 2px solid #eeeeee;
+      //color: #eeeeee;
+      border-bottom: 2px solid $jose-blue;
     }
     .subtitle {
-      color: #eeeeee;
+      //color: #eeeeee;
     }
   }
 }

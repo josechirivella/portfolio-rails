@@ -48,7 +48,7 @@ html, body {
 
   .top-container img {
     @include omega();
-    @include size(100%);
+    width: 100%;
     position: absolute;
     z-index: -1;
   }
