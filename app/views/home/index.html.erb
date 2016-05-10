@@ -3,7 +3,7 @@
     var mobileSize = 760;
     var portraitImg = "<%= image_path('portrait.png') %>";
     var backgroundImg = "<%= image_path('background.png') %>";
-    if($(window).width(mobileSize)) {
+    if($(window).width() < mobileSize) {
       $('.background-pic').attr('src', portraitImg);
     } else {
       $('.background-pic').attr('src', backgroundImg);
