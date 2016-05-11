@@ -16,5 +16,3 @@
 * CircleCI
 * Sketch 3
 * PostgreSQL
-
-## Version 2.0 coming soon. I'm going to post the sketch here.
