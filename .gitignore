@@ -11,7 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
-.idea/*
+.idea/
 .env
 /test/vcr_cassettes
 coverage/
