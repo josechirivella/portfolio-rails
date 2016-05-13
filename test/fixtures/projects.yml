@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   title: MATI
   description: Redesigning
   advance_description: More description here
@@ -8,6 +9,7 @@ one:
   source_code_link: https://github.com/JoseChirivella14
 
 two:
+  id: 2
   title: Portfolio
   description: My portfolio
   advance_description: More description here 2
