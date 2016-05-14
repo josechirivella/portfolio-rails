@@ -14,5 +14,4 @@
 * Capybara
 * Shoulda with Minitest
 * CircleCI
-* Sketch 3
 * PostgreSQL
