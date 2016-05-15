@@ -132,27 +132,31 @@ i {
 .social-icons a {
   color: unset;
 }
-.social-icons i {
-  font-size: 2em;
-  @include padding(null 1%);
+.social-icons {
+  .fa {
+    color: #6F7680;
+  }
+  i {
+    font-size: 2em;
+    @include padding(null 1%);
+  }
 }
-
-/*------------------------------------*\
-    #NAV
-\*------------------------------------*/
+  /*------------------------------------*\
+      #NAV
+  \*------------------------------------*/
 nav {
   text-align: center;
 }
-  nav a {
-    text-decoration: none;
-  }
-    nav li {
-      display: inline-block;
-    }
+nav a {
+  text-decoration: none;
+}
+nav li {
+  display: inline-block;
+}
 
-/*------------------------------------*\
-    # FOOTER
-\*------------------------------------*/
+  /*------------------------------------*\
+      # FOOTER
+  \*------------------------------------*/
 .footer {
   width:100%;
   .footer-info {
@@ -161,23 +165,23 @@ nav {
   }
 }
 
-/*------------------------------------*\
-    # BORDER'S TYPE
-\*------------------------------------*/
+  /*------------------------------------*\
+      # BORDER'S TYPE
+  \*------------------------------------*/
 .border-primary {
   border-bottom: 2px solid $jose-blue;
 }
-  .border-primary-type-1 {
-    border-left: 2px solid $jose-blue;
-    @include padding(null null null 5px);
-  }
+.border-primary-type-1 {
+  border-left: 2px solid $jose-blue;
+  @include padding(null null null 5px);
+}
 .border-secondary {
   border-bottom: 2px solid white;
 }
 
-/*------------------------------------*\
-    # BOX TYPES
-\*------------------------------------*/
+  /*------------------------------------*\
+      # BOX TYPES
+  \*------------------------------------*/
 .box-blue {
   display: inline-block;
   background: $jose-blue;
@@ -185,9 +189,9 @@ nav {
   color: #eeeeee;
 }
 
-/*------------------------------------*\
-    # FONT STYLES
-\*------------------------------------*/
+  /*------------------------------------*\
+      # FONT STYLES
+  \*------------------------------------*/
 a {
   color: unset;
 }
@@ -195,9 +199,9 @@ a {
   @include margin(0);
 }
 
-/*------------------------------------*\
-    # TITLES
-\*------------------------------------*/
+  /*------------------------------------*\
+      # TITLES
+  \*------------------------------------*/
 .title {
   text-align: center;
   @include margin(0 auto);
@@ -211,9 +215,9 @@ a {
   color: lighten($jose-darkgrey, 20%);
 }
 
-/*------------------------------------*\
-    # Responsive Design
-\*------------------------------------*/
+  /*------------------------------------*\
+      # Responsive Design
+  \*------------------------------------*/
 @media screen and (max-width: 768px) {
   body {
     font-size: 1.2em;
@@ -229,7 +233,7 @@ a {
     width:100%;
     text-align: justify;
     p {
-      margin: 1em 1em;
+      padding-right: 2em;
     }
   }
   .secondary-title {

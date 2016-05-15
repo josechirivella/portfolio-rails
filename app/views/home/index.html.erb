@@ -1,5 +1,17 @@
+<script>
+  $(document).ready(function() {
+    var mobileSize = 760;
+    var portraitImg = "<%= image_path('portrait.png') %>";
+    var backgroundImg = "<%= image_path('background.png') %>";
+    if($(window).width() < mobileSize) {
+      $('.background-pic').attr('src', portraitImg);
+    } else {
+      $('.background-pic').attr('src', backgroundImg);
+    }
+  });
+</script>
 <div class="top-container">
-  <%= image_tag('background.png') %>
+  <%= image_tag('background.png', class:'background-pic') %>
   <div class="title">
     <h2 class="primary-title">JOSE CHIRIVELLA</h2>
     <div class="subtitle">
