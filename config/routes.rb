@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   devise_for :admins
 
+  namespace :api do
+    namespace :v1 do
+      resources :projects
+      resources :educations
+      resources :experiences
+    end
+  end
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   root 'home#index'
