@@ -69,12 +69,10 @@ html, body {
     text-align: right;
   }
   .profile-picture {
-    @include span-columns(2 of 12);
+    @include span-columns(3 of 12);
   }
   .personal-info {
     @include span-columns(4 of 12);
-    @include shift(0.5);
-    @include omega();
   }
   .skills {
     @include span-columns(12);
