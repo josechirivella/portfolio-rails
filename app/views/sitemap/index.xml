@@ -7,23 +7,27 @@
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
   <url>
-    <loc>http://www.jchirivella.com/</loc>
+    <loc>https://www.jchirivella.com/</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://www.jchirivella.com/projects/1</loc>
+    <loc>https://www.jchirivella.com/projects/1</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://www.jchirivella.com/projects/2</loc>
+    <loc>https://www.jchirivella.com/projects/2</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://www.jchirivella.com/projects/3</loc>
+    <loc>https://www.jchirivella.com/projects/3</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://www.jchirivella.com/projects/4</loc>
+    <loc>https://www.jchirivella.com/projects/4</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.jchirivella.com/projects/5</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
