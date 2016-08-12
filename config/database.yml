@@ -17,4 +17,4 @@ production:
   <<: *default
   database: portfolio_production
   username: <%= ENV['PORTFOLIO_DB_USER'] %>
-  password: <%= ENV['PORTFOLIO-RAILS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>
