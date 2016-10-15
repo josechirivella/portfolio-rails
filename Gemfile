@@ -14,7 +14,7 @@ gem 'rails_admin'
 gem 'dotenv-rails'
 
 group :development do
-  gem 'puma'
+  gem 'passenger'
   gem 'spring'
 end
 
