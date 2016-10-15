@@ -5,8 +5,14 @@
   background: url('background.png') center top no-repeat;
   background-size: cover;
   min-height: rem-calc(600);
+  @include breakpoint(small only) {
+    background-position: 10% 0;
+  }
   .content {
     padding-top: 10rem;
+    @include breakpoint(medium down) {
+      padding-top: 17.5rem;
+    }
     .social-icons {
       padding-top: 9rem;
     }
