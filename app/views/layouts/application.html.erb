@@ -16,8 +16,10 @@
     <div class="main-container">
       <%= yield %>
     </div>
-    <div class="footer">
-      <p class="footer-info">&copy; Jose Chirivella <%= Time.now.year %></p>
+    <div class="footer row">
+      <div class="small-12 columns text-center">
+        <p class="footer-info">&copy; Jose Chirivella <%= Time.now.year %></p>
+      </div>
     </div>
   </body>
   <% if Rails.env == 'production' %>
