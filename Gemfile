@@ -14,15 +14,14 @@ gem 'rails_admin'
 gem 'dotenv-rails'
 
 group :development do
-  gem 'passenger'
+  gem 'puma'
   gem 'spring'
 end
 
 # Assets
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-gem 'bourbon'
-gem 'neat'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'better_errors'
