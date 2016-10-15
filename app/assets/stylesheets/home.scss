@@ -1,3 +1,14 @@
 /*------------------------------------*\
 #               CONTAINERS
 \*------------------------------------*/
+#top-container {
+  background: url('background.png') center top no-repeat;
+  background-size: cover;
+  min-height: rem-calc(600);
+  .content {
+    padding-top: 10rem;
+    .social-icons {
+      padding-top: 9rem;
+    }
+  }
+}
