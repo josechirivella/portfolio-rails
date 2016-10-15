@@ -21,8 +21,7 @@ end
 # Assets
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-gem 'bourbon'
-gem 'neat'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'better_errors'

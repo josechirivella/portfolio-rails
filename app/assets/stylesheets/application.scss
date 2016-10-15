@@ -1,281 +1,59 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- */
-
+@import 'foundation_and_overrides';
 @import "font-awesome";
-@import "bourbon";
-@import "neat";
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import "colors.scss";
-@import "home.scss";
-@import "contacts.scss";
-@import "projects.scss";
+@import 'colors';
+@import 'home';
+@import 'projects';
 
 /*------------------------------------*\
     #HTML/BODY
 \*------------------------------------*/
-html, body {
-  box-sizing: border-box;
-  margin:0 !important;
-  padding:0 !important;
-  height: 100%;
-}
 
 /*------------------------------------*\
     # LAYOUTS
 \*------------------------------------*/
-.container {
-  @include outer-container(100%);
-  min-height: 30em;
+.row {
+  max-width: rem-calc(960) !important;
+}
+section {
+  padding: 2rem 0;
 }
 
-.top-container {
-  @include span-columns(12);
-  height: 30em;
-  max-height: 30em;
-  position: relative;
-}
-
-  .top-container img {
-    @include omega();
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-  }
-    .social-icons {
-      @include margin(null auto);
-      text-align: center;
-    }
-
-.about-me-container {
-  @include span-columns(12);
-  position: relative;
-  min-height: 23em;
-}
-  .story {
-    @include span-columns(5 of 12);
-    width:38%;
-    @include shift(0);
-    text-align: right;
-  }
-  .profile-picture {
-    @include span-columns(3 of 12);
-  }
-  .personal-info {
-    @include span-columns(4 of 12);
-  }
-  .skills {
-    @include span-columns(12);
-  }
-
-.resume-container {
-  @include span-columns(12);
-  position: relative;
-}
-
-  .education {
-    @include span-columns(6 of 12);
-    position: relative;
-    text-align: right;
-  }
-
-  .experience {
-    @include span-columns(6 of 12);
-    position: relative;
-  }
-
-.portfolio-container {
-  @include span-columns(12);
-  position: relative;
-}
-  .portfolio {
-    position: relative;
-    width:auto;
-    min-height: 18em;
-    @include margin(0 5em);
-    .projects {
-      width: 33%;
-      display: inline-block;
-      @include margin(0);
-    }
-  }
 /*------------------------------------*\
     #FONTS
 \*------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-i {
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+* {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-/*------------------------------------*\
-    #SOCIAL ICONS
-\*------------------------------------*/
-.social-icons a {
-  color: unset;
-}
-.social-icons {
+  /*------------------------------------*\
+      #SOCIAL ICONS
+  \*------------------------------------*/
   .fa {
-    color: #6F7680;
+    font-size: rem-calc(24);
+    margin: 0 0.7rem;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 50px;
+    padding: 0.9rem;
+    min-width: rem-calc(55);
   }
-  i {
-    font-size: 2em;
-    @include padding(null 1%);
-  }
-}
+
   /*------------------------------------*\
       #NAV
   \*------------------------------------*/
-nav {
-  text-align: center;
-}
-nav a {
-  text-decoration: none;
-}
-nav li {
-  display: inline-block;
-}
 
   /*------------------------------------*\
       # FOOTER
   \*------------------------------------*/
-.footer {
-  width:100%;
-  .footer-info {
-    text-align: center;
-    @include margin(1em);
-  }
-}
 
   /*------------------------------------*\
       # BORDER'S TYPE
   \*------------------------------------*/
 .border-primary {
-  border-bottom: 2px solid $jose-blue;
-}
-.border-primary-type-1 {
-  border-left: 2px solid $jose-blue;
-  @include padding(null null null 5px);
+  border-bottom: 2px solid $blue;
 }
 .border-secondary {
-  border-bottom: 2px solid white;
-}
-
-  /*------------------------------------*\
-      # BOX TYPES
-  \*------------------------------------*/
-.box-blue {
-  display: inline-block;
-  background: $jose-blue;
-  padding: 5px;
-  color: #eeeeee;
-}
-
-  /*------------------------------------*\
-      # FONT STYLES
-  \*------------------------------------*/
-a {
-  color: unset;
-}
-.p-without-margin p {
-  @include margin(0);
-}
-
-  /*------------------------------------*\
-      # TITLES
-  \*------------------------------------*/
-.title {
-  text-align: center;
-  @include margin(0 auto);
-  @include size(30% auto);
-}
-.primary-title {
-  font-weight: bold;
-  line-height: 2em;
-}
-.secondary-title {
-  color: lighten($jose-darkgrey, 20%);
-}
-
-  /*------------------------------------*\
-      # Responsive Design
-  \*------------------------------------*/
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 1.2em;
-  }
-  .social-icons .fa {
-    margin-right: 10px;
-  }
-  .title {
-    @include size(100% auto);
-  }
-  .story {
-    float: none;
-    width:100%;
-    text-align: justify;
-    p {
-      padding-right: 2em;
-    }
-  }
-  .secondary-title {
-    text-align: center;
-  }
-  .profile-picture {
-    @include span-columns(10 of 12);
-    float: none;
-    margin-left: 17%;
-  }
-  .personal-info {
-    float: none;
-    width:100%;
-    margin: 0;
-  }
-  .border-primary-type-1 {
-    margin-left: 2.5em;
-  }
-  .education {
-    float: none;
-    margin: 0 1em;
-    width: 92%;
-    text-align: left;
-  }
-  .experience {
-    float: none;
-    width: 92%;
-    margin: 0 1em;
-  }
-  .portfolio {
-    margin: 0 1em;
-    .projects {
-      width: 100%;
-    }
-  }
-  .project {
-    .title {
-      i {
-        margin: 0 1em;
-      }
-    }
-  }
-  .project-links {
-    width: 90%;
-    margin: 0 1em;
-  }
+  border-bottom: 2px solid $white;
 }
