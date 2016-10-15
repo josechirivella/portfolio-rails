@@ -1,7 +1,7 @@
 <section id="top-container">
   <div class="content">
     <div class="row">
-      <div class="small-10 small-centered medium-6 text-center">
+      <div class="small-10 small-centered medium-6 columns text-center">
         <div class="title">
           <h2 class="primary-title border-primary">JOSE CHIRIVELLA</h2>
           <div class="subtitle">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="small-12 small-centered text-center">
+      <div class="small-12 small-centered columns text-center">
         <div class="social-icons">
           <a href="https://github.com/JoseChirivella14" target="_blank"><i class="fa fa-github"></i></a>
           <!-- <a href="https://www.behance.net/joserchiri1910" target="_blank"><i class="fa fa-behance"></i></a> -->
@@ -24,70 +24,93 @@
     </div>
   </div>
 
-</div>
-<div class="about-me-container">
-  <div class="title">
-    <h3 class="border-primary primary-title">ABOUT ME</h3>
-    <div class="subtitle">
-      <h5>I'M GLAD TO MEET YOU</h5>
+</section>
+<section id="about-me-container">
+  <div class="row">
+    <div class="small-12 text-center columns">
+      <div class="title">
+        <h3 class="border-primary primary-title">ABOUT ME</h3>
+        <div class="subtitle">
+          <h5>I'M GLAD TO MEET YOU</h5>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="story">
-    <h5 class="secondary-title">SHORT STORY</h5>
-    <p>Jose is a Full Stack Web Developer with an outgoing personality and delivering good work every day. He specializes in development with Ruby, Ruby on Rails, HTML5, CSS3, JavaScript, JavaScript libraries such as jQuery and React, JavaScript Frameworks such as Backbone.js and AngularJS.
-      <br>
-      Jose currently works at Hiregrid where he is the Front End Engineer in charge of all the Front End in  the company such as developing new features, debugging, refactoring code, code reviews and deploying for company's web app, marketing website and career sites. Before Hiregrid, Jose was the a Front End Developer Intern at Windsor Circle doing outstanding work on the Front End and QA, developing components, reusable code, and doing automated testing with Selenium.
-      <br>
-      If you want to know more about Jose keep reading and / or see his portfolio below.
-    </p>
-  </div>
-  <div class="profile-picture">
-    <%= image_tag('me-cut.png') %>
-  </div>
-  <div class="personal-info">
-    <h5 class="secondary-title">PERSONAL INFO</h5>
-    <p class="border-primary-type-1">Name: Jose Chirivella </p>
-    <p class="border-primary-type-1">Phone: +1 786.216.3571</p>
-    <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com" target="_blank">joser.chirivella@gmail.com</a></p>
-  </div>
-  <!--<div class="skills">-->
-    <!--<h3 class="secondary-title">MY SKILLS</h3>-->
-    <!--<br>-->
-  <!--</div>-->
-</div>
-<div class="resume-container">
-  <div class="title">
-    <h3 class="border-primary primary-title">RESUME</h3>
-  </div>
-  <div class="education">
-    <h4>Education<i class="fa fa-graduation-cap"></i></h4>
-    <% @education.order('date desc').each do |education| %>
-      <p><i><%= education.date.strftime('%B/%Y') %></i></p>
-      <p class="box-blue"><%= education.title %></p>
-      <p><%= education.description %></p>
-      <br>
-    <% end %>
-  </div>
-  <div class="experience">
-    <h4><i class="fa fa-suitcase"></i>Experience</h4>
-    <% @experience.order('from_date desc').each do |experience| %>
-      <p><i><%= experience.from_date.strftime('%B/%Y') %> - <%= experience.until.strftime('%B/%Y') %></i></p>
-      <p class="box-blue"><%= experience.company %></p>
-      <p><%= experience.title %></p>
-      <p><%= experience.description %></p>
-      <br>
-    <% end %>
-  </div>
-</div>
-<div class="portfolio-container">
-  <div class="title">
-    <h3 class="border-primary primary-title">PORTFOLIO</h3>
-  </div>
-  <div class="portfolio">
-    <% @project.order('created_at asc').each do |project| %>
-    <div class="projects">
-      <%= link_to image_tag(project.background_image_url), project_path(project.id) %>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="story">
+        <h5 class="secondary-title">SHORT STORY</h5>
+        <p>Jose is a Full Stack Web Developer with an outgoing personality and delivering good work every day. He specializes in development with Ruby, Ruby on Rails, HTML5, CSS3, JavaScript, JavaScript libraries such as jQuery and React, JavaScript Frameworks such as Backbone.js and AngularJS.
+          <br>
+          Jose currently works at Hiregrid where he is the Front End Engineer in charge of all the Front End in  the company such as developing new features, debugging, refactoring code, code reviews and deploying for company's web app, marketing website and career sites. Before Hiregrid, Jose was the a Front End Developer Intern at Windsor Circle doing outstanding work on the Front End and QA, developing components, reusable code, and doing automated testing with Selenium.
+          <br>
+          If you want to know more about Jose keep reading and / or see his portfolio below.
+        </p>
+      </div>
+      <div class="profile-picture">
+        <%= image_tag('me-cut.png') %>
+      </div>
+      <div class="personal-info">
+        <h5 class="secondary-title">PERSONAL INFO</h5>
+        <p class="border-primary-type-1">Name: Jose Chirivella </p>
+        <p class="border-primary-type-1">Phone: +1 786.216.3571</p>
+        <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com" target="_blank">joser.chirivella@gmail.com</a></p>
+      </div>
+      <!--<div class="skills">-->
+        <!--<h3 class="secondary-title">MY SKILLS</h3>-->
+        <!--<br>-->
+      <!--</div>-->
     </div>
-    <% end %>
   </div>
-</div>
+</section>
+<section id="resume-container">
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="title">
+        <h3 class="border-primary primary-title">RESUME</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 medium-6 columns">
+      <div class="education">
+        <h4>Education<i class="fa fa-graduation-cap"></i></h4>
+        <% @education.order('date desc').each do |education| %>
+          <p><i><%= education.date.strftime('%B/%Y') %></i></p>
+          <p class="box-blue"><%= education.title %></p>
+          <p><%= education.description %></p>
+          <br>
+        <% end %>
+      </div>
+    </div>
+    <div class="small-12 medium-6 columns">
+      <div class="experience">
+        <h4><i class="fa fa-suitcase"></i>Experience</h4>
+        <% @experience.order('from_date desc').each do |experience| %>
+          <p><i><%= experience.from_date.strftime('%B/%Y') %> - <%= experience.until.strftime('%B/%Y') %></i></p>
+          <p class="box-blue"><%= experience.company %></p>
+          <p><%= experience.title %></p>
+          <p><%= experience.description %></p>
+          <br>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio-container">
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="title">
+        <h3 class="border-primary primary-title">PORTFOLIO</h3>
+      </div>
+      <div class="portfolio">
+        <% @project.order('created_at asc').each do |project| %>
+        <div class="projects">
+          <%= link_to image_tag(project.background_image_url), project_path(project.id) %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
