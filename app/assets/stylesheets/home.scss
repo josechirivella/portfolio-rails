@@ -2,7 +2,7 @@
 #               CONTAINERS
 \*------------------------------------*/
 #top-container {
-  background: url('background.png') center top no-repeat;
+  background: url('mountain_lake.jpg') center center no-repeat;
   background-size: cover;
   min-height: rem-calc(600);
   @include breakpoint(small only) {
