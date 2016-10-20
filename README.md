@@ -9,7 +9,7 @@
 * jQuery
 * Rails _ Admin
 * Devise
-* Bourbon & Neat (SASS Library & Grid System)
+* Foundation
 * Font-Awesome
 * Capybara
 * Shoulda with Minitest
