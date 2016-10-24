@@ -15,3 +15,4 @@ WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
 RUN bundle install --jobs=4
 ADD . $APP_HOME
+EXPOSE 3000
