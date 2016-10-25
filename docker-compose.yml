@@ -2,6 +2,8 @@ db:
   image: postgres
   ports:
     - "5432:5432"
+  expose: 
+  - "5432"
 
 web:
   build: .
@@ -12,3 +14,5 @@ web:
     - db
   volumes:
     - /Users/jchirivella/josePersonal/portfolio-rails
+  expose: 
+  - "3000"
