@@ -57,3 +57,11 @@ section {
 .border-secondary {
   border-bottom: 2px solid $white;
 }
+
+  /*------------------------------------*\
+      # TYPOGRAPHY HELPERS
+  \*------------------------------------*/
+
+.white-text {
+	color: $white;
+}
