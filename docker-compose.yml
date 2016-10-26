@@ -2,7 +2,7 @@ db:
   image: postgres
   ports:
     - "5432:5432"
-  expose: 
+  expose:
   - "5432"
 
 web:
@@ -13,6 +13,6 @@ web:
   links:
     - db
   volumes:
-    - /Users/jchirivella/josePersonal/portfolio-rails
-  expose: 
+    - .:/portfolio-rails
+  expose:
   - "3000"

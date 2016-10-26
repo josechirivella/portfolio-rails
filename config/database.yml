@@ -6,7 +6,7 @@ default: &default
 
 development:
   <<: *default
-  host: <%= ENV['DB_PORT_5432_DOCKER'] %>
+  host: db
   username: postgres
   database: portfolio_development
 

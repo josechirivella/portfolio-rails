@@ -1,6 +1,6 @@
 FROM ruby:2.3.1
 
-RUN apt-get update -qq && apt-get upgrade && apt-get install -y build-essential
+RUN apt-get update -qq && apt-get -y upgrade && apt-get install -y build-essential
 RUN apt-get install -y nodejs
 # for postgresql
 RUN apt-get install -y libpq-dev
@@ -15,4 +15,3 @@ WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
 RUN bundle install --jobs=4
 ADD . $APP_HOME
-EXPOSE 3000
