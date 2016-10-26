@@ -19,6 +19,7 @@
   }
 }
 #about-me-container {
+	background-color: #fafafa;
 	.story {
 		@include breakpoint(large) {
 			text-align: right;
