@@ -18,3 +18,15 @@
     }
   }
 }
+#about-me-container {
+	.story {
+		@include breakpoint(large) {
+			text-align: right;
+		}
+	}
+	.personal-info {
+		@include breakpoint(large){
+			text-align: left;
+		}
+	}
+}
