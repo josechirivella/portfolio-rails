@@ -5,6 +5,15 @@
   background: url('mountain_lake.jpg') center center no-repeat;
   background-size: cover;
   min-height: rem-calc(600);
+	.fa {
+    font-size: rem-calc(24);
+    margin: 0 0.7rem;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 50px;
+    padding: 0.9rem;
+    min-width: rem-calc(55);
+  }
   @include breakpoint(small only) {
     background-position: 10% 0;
   }
