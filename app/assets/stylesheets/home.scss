@@ -40,3 +40,12 @@
 		}
 	}
 }
+#experience {
+	.box-blue {
+		background: $blue;
+		display: inline-block;
+		padding: rem-calc(5);
+		color: $white;
+		font-weight: bold;
+	}
+}

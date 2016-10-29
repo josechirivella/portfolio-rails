@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="small-12 medium-6 columns">
-      <div class="experience">
+      <div id="experience">
         <h4><i class="fa fa-suitcase"></i>Experience</h4>
         <% @experience.order('from_date desc').each do |experience| %>
           <p><i><%= experience.from_date.strftime('%B/%Y') %> - <%= experience.until.strftime('%B/%Y') %></i></p>
