@@ -9,7 +9,8 @@ application stack includes Backbone, jQuery, LESS, and Marionette.js, built on t
 using Python's Pyramid web framework.
 Increased application performance by compiling the templates on the server.
 Designed and implemented automated testing with Selenium and Nightwatch.js
-Implementing a new CSS Style Guide.", from_date: 'May 1, 2015', until: 'September 30, 2015')
+Implementing a new CSS Style Guide using module classes and components.", from_date: 'May 1, 2015', until: 'September 30, 2015')
+Experience.create!(title: 'Lead Front End Developer', company: 'Hiregrid', description: 'Developed the front end arquitecture for the Web Analytics Application and career sites for companies', from_date: 'December 13, 2015', until: 'June 13, 2016')
 
 Project.destroy_all
 Project.create!(title: 'Plankful', description: 'An app to facilitate the searching of a gym, yoga class and many more', advance_description: 'Using React with Express.js, Bootstrap (Soon Foundation 6!) and MongoDB', live_url: 'https://www.plankful.com/', source_code_link: '', background_image_url: 'https://storage.googleapis.com/portfolio-assets/portfolio/plankful.png')
