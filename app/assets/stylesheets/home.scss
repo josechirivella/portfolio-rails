@@ -29,6 +29,9 @@
 }
 #about-me-container {
 	background-color: #fafafa;
+	.primary-title {
+		margin-bottom: 6rem;
+	}
 	.story {
 		@include breakpoint(large) {
 			text-align: right;
@@ -43,6 +46,9 @@
 #education {
 	@include breakpoint(medium up) {
 		text-align: right;
+	}
+	.primary-title {
+		margin-bottom: 6rem;
 	}
 	h4 {
 		text-transform: uppercase;
@@ -69,5 +75,15 @@
 	}
 	h4 {
 		text-transform: uppercase;
+	}
+}
+
+#portfolio-container {
+	background-color: $darkgrey;
+	.primary-title {
+		margin-bottom: 6rem;
+	}
+	h3 {
+		color: $white;
 	}
 }
