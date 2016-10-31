@@ -1,55 +1,89 @@
 /*------------------------------------*\
 #               CONTAINERS
 \*------------------------------------*/
-.top-container {
-  position: absolute;
-  display: block;
-  .social-icons {
-    @include position(relative, 16em 0 0 0);
+#top-container {
+  background: url('https://storage.googleapis.com/portfolio-assets/portfolio/mountain_lake.jpg') center center no-repeat;
+  background-size: cover;
+  min-height: rem-calc(600);
+	.fa {
+    font-size: rem-calc(24);
+    margin: 0 0.7rem;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 50px;
+    padding: 0.9rem;
+    min-width: rem-calc(55);
   }
-  .title {
-    @include position(relative, 8em 0 0 0);
-    h2 {
-      border-bottom: 2px solid $jose-blue;
+  @include breakpoint(small only) {
+    background-position: 10% 0;
+  }
+  .content {
+    padding-top: 10rem;
+    @include breakpoint(medium down) {
+      padding-top: 17.5rem;
+    }
+    .social-icons {
+      padding-top: 9rem;
     }
   }
 }
-
-.about-me-container {
-  background-color: $jose-grey;
+#about-me-container {
+	background-color: #fafafa;
+	.title {
+		margin-bottom: 6rem;
+	}
+	.story {
+		@include breakpoint(large) {
+			text-align: right;
+		}
+	}
+	.personal-info {
+		@include breakpoint(large){
+			text-align: left;
+		}
+	}
+}
+#education {
+	@include breakpoint(medium up) {
+		text-align: right;
+	}
+	.primary-title {
+		margin-bottom: 6rem;
+	}
+	h5 {
+		text-transform: uppercase;
+	}
+	.fa {
+		background-color: $blue;
+		border-radius: 50px;
+		width: rem-calc(50px);
+		height: rem-calc(50px);
+		padding: 0.8rem 0.5rem;
+		color: $white;
+		margin-left: 1rem;
+	}
+}
+#experience {
+	.fa {
+		background-color: $blue;
+		border-radius: 50px;
+		width: rem-calc(50px);
+		height: rem-calc(50px);
+		padding: 0.8rem;
+		color: $white;
+		margin-right: 1rem;
+	}
+	h5 {
+		text-transform: uppercase;
+	}
 }
 
-  .profile-picture img {
-    border: none;
-    display: block;
-    width: 85%;
-    margin-bottom: 1em;
-  }
-
-  .story {
-    float: right;
-    padding-left: 2em;
-  }
-
-.resume-container {
-  background-color: #ffffff;
-  .fa {
-    @include padding(null 1%);
-    font-size: 2em;
-  }
-}
-
-.education p {
-  @include margin(5px 0);
-}
-
-.experience p {
-  @include margin(5px 0);
-}
-
-.portfolio-container {
-  background-color: $jose-darkgrey;
-  .title {
-    color: white;
-  }
+#portfolio-container {
+	background-color: $darkgrey;
+	.primary-title {
+		margin-bottom: 6rem;
+	}
+	h3 {
+		color: $white;
+	}
 }
