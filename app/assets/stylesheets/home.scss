@@ -29,7 +29,7 @@
 }
 #about-me-container {
 	background-color: #fafafa;
-	.primary-title {
+	.title {
 		margin-bottom: 6rem;
 	}
 	.story {
@@ -50,7 +50,7 @@
 	.primary-title {
 		margin-bottom: 6rem;
 	}
-	h4 {
+	h5 {
 		text-transform: uppercase;
 	}
 	.fa {
@@ -73,7 +73,7 @@
 		color: $white;
 		margin-right: 1rem;
 	}
-	h4 {
+	h5 {
 		text-transform: uppercase;
 	}
 }
