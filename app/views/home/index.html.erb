@@ -68,7 +68,7 @@
   </div>
   <div class="row">
     <div class="small-12 medium-6 columns">
-      <div class="education">
+      <div id="education">
         <h4>Education<i class="fa fa-graduation-cap"></i></h4>
         <% @education.order('date desc').each do |education| %>
           <p><i><%= education.date.strftime('%B/%Y') %></i></p>

@@ -40,12 +40,34 @@
 		}
 	}
 }
-#experience {
-	.box-blue {
-		background: $blue;
-		display: inline-block;
-		padding: rem-calc(5);
+#education {
+	@include breakpoint(medium up) {
+		text-align: right;
+	}
+	h4 {
+		text-transform: uppercase;
+	}
+	.fa {
+		background-color: $blue;
+		border-radius: 50px;
+		width: rem-calc(50px);
+		height: rem-calc(50px);
+		padding: 0.8rem 0.5rem;
 		color: $white;
-		font-weight: bold;
+		margin-left: 1rem;
+	}
+}
+#experience {
+	.fa {
+		background-color: $blue;
+		border-radius: 50px;
+		width: rem-calc(50px);
+		height: rem-calc(50px);
+		padding: 0.8rem;
+		color: $white;
+		margin-right: 1rem;
+	}
+	h4 {
+		text-transform: uppercase;
 	}
 }
