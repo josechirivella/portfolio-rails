@@ -13,11 +13,8 @@ gem 'bcrypt'
 gem 'rails_admin'
 gem 'dotenv-rails'
 
-group :development do
-  gem 'passenger'
-  gem 'spring'
-end
-
+gem 'passenger'
+# gem 'spring'
 # Assets
 gem 'jquery-rails'
 gem 'font-awesome-rails'
