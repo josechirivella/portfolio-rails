@@ -6,6 +6,8 @@ default: &default
 
 development:
   <<: *default
+  host: db
+  username: postgres
   database: portfolio_development
 
 test:
@@ -15,5 +17,5 @@ test:
 production:
   <<: *default
   database: portfolio_production
-  username: <%= ENV['PORTFOLIO_DB_USER'] %>
-  password: <%= ENV['PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>
+  username: <%= ENV['PSQL_USER_PRODUCTION'] %>
+  password: <%= ENV['PSQL_PASSWORD_PRODUCTION'] %>
