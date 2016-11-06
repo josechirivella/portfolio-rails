@@ -6,8 +6,6 @@ default: &default
 
 development:
   <<: *default
-  host: db
-  username: postgres
   database: portfolio_development
 
 test:
