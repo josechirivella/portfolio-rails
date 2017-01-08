@@ -10,7 +10,7 @@
 * Rails _ Admin
 * Devise
 * Foundation
-* Font-Awesome
+* Font Awesome
 * Capybara
 * Shoulda with Minitest
 * CircleCI
