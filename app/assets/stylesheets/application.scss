@@ -1,6 +1,6 @@
 @import 'foundation_and_overrides';
 @import 'font-awesome';
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 @import 'colors';
 @import 'home';
 @import 'projects';
@@ -45,6 +45,10 @@ section {
 /*------------------------------------*\
 		# FOOTER
 \*------------------------------------*/
+.footer-info {
+	margin: 0;
+	padding: 0.5rem 0;
+}
 
 /*------------------------------------*\
 		# BORDER'S TYPE

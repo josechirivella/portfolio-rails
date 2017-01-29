@@ -70,7 +70,7 @@
       <div id="education">
         <h5>Education<i class="fa fa-graduation-cap"></i></h5>
         <% @education.order('date desc').each do |education| %>
-          <p><i><%= education.date.strftime('%B/%Y') %></i></p>
+          <p><i><%= education.date.strftime('%B / %Y') %></i></p>
           <p class="box-blue"><%= education.title %></p>
           <p><%= education.description %></p>
           <br>
@@ -81,7 +81,11 @@
       <div id="experience">
         <h5><i class="fa fa-suitcase"></i>Experience</h5>
         <% @experience.order('from_date desc').each do |experience| %>
-          <p><i><%= experience.from_date.strftime('%B/%Y') %> - <%= experience.until.strftime('%B/%Y') %></i></p>
+					<% if experience.until.nil? %>
+						<p><i><%= experience.from_date.strftime('%B / %Y') %> -  Present</i></p>
+					<% else %>
+						<p><i><%= experience.from_date.strftime('%B / %Y') %> - <%= experience.until.strftime('%B / %Y') %></i></p>
+					<% end %>
           <p class="box-blue"><%= experience.company %></p>
           <p><%= experience.title %></p>
           <p><%= experience.description %></p>
