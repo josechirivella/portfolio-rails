@@ -107,7 +107,7 @@
 	<div class="row small-up-1 medium-up-2">
 		<% @project.order('created_at asc').each do |project| %>
 		<div class="projects column">
-			<%= link_to image_tag(project.background_image_url), project_path(project.id) %>
+			<%= link_to image_tag(project.background_image_url), project_path(project.friendly_id) %>
 		</div>
 		<% end %>
 	</div>
