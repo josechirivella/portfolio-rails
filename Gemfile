@@ -14,6 +14,7 @@ gem 'rails_admin'
 gem 'dotenv-rails'
 
 gem 'passenger'
+gem 'friendly_id'
 # gem 'spring'
 # Assets
 gem 'jquery-rails'
