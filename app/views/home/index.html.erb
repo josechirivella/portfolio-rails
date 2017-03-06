@@ -48,7 +48,6 @@
       <div class="personal-info small-12 large-4 columns">
         <h5 class="secondary-title">PERSONAL INFO</h5>
         <p class="border-primary-type-1">Name: Jose Chirivella </p>
-        <p class="border-primary-type-1">Phone: +1 786.216.3571</p>
         <p class="border-primary-type-1">Email: <a href="mailto:joser.chirivella@gmail.com" target="_blank">joser.chirivella@gmail.com</a></p>
       </div>
       <!--<div class="skills">-->
@@ -71,7 +70,7 @@
       <div id="education">
         <h5>Education<i class="fa fa-graduation-cap"></i></h5>
         <% @education.order('date desc').each do |education| %>
-          <p><i><%= education.date.strftime('%B/%Y') %></i></p>
+          <p><i><%= education.date.strftime('%B / %Y') %></i></p>
           <p class="box-blue"><%= education.title %></p>
           <p><%= education.description %></p>
           <br>
@@ -82,7 +81,11 @@
       <div id="experience">
         <h5><i class="fa fa-suitcase"></i>Experience</h5>
         <% @experience.order('from_date desc').each do |experience| %>
-          <p><i><%= experience.from_date.strftime('%B/%Y') %> - <%= experience.until.strftime('%B/%Y') %></i></p>
+					<% if experience.until.nil? %>
+						<p><i><%= experience.from_date.strftime('%B / %Y') %> -  Present</i></p>
+					<% else %>
+						<p><i><%= experience.from_date.strftime('%B / %Y') %> - <%= experience.until.strftime('%B / %Y') %></i></p>
+					<% end %>
           <p class="box-blue"><%= experience.company %></p>
           <p><%= experience.title %></p>
           <p><%= experience.description %></p>
@@ -104,7 +107,7 @@
 	<div class="row small-up-1 medium-up-2">
 		<% @project.order('created_at asc').each do |project| %>
 		<div class="projects column">
-			<%= link_to image_tag(project.background_image_url), project_path(project.id) %>
+			<%= link_to image_tag(project.background_image_url), project_path(project.friendly_id) %>
 		</div>
 		<% end %>
 	</div>
