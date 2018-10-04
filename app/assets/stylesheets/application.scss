@@ -67,3 +67,12 @@ section {
 .white-text {
 	color: $white;
 }
+// TODO Remove me after updates
+// Alert
+#alert-container {
+	margin: 0;
+	#inner-container {
+		max-width: 60rem;
+		margin: 0 auto;
+	}
+}

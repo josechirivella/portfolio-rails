@@ -14,6 +14,14 @@
     <i class="notice"><%= notice %></i>
     <i class="alert"><%= alert %></i>
     <div class="main-container">
+	    <div id="alert-container" class="callout alert" data-closable>
+		    <div id="inner-container">
+			    <p class="text-center">Hello! I haven't had the time to update this website so consider all the data from this outdated. Thanks!</p>
+		    </div>
+		    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+			    <span aria-hidden="true">&times;</span>
+		    </button>
+	    </div>
       <%= yield %>
     </div>
     <div class="footer row">
