@@ -13,7 +13,7 @@ gem 'bcrypt'
 gem 'rails_admin'
 gem 'dotenv-rails'
 
-gem 'passenger'
+gem 'passenger', '5.1.1'
 gem 'friendly_id'
 # gem 'spring'
 # Assets
