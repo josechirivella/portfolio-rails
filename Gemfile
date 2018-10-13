@@ -12,6 +12,7 @@ gem 'devise'
 gem 'bcrypt'
 gem 'rails_admin'
 gem 'dotenv-rails'
+gem 'therubyracer'
 
 gem 'passenger', group: :production
 gem 'friendly_id'
