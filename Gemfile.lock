@@ -135,7 +135,7 @@ GEM
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    passenger (5.3.5)
+    passenger (5.1.1)
       rack
       rake (>= 0.8.1)
     pg (0.15.0)
@@ -279,7 +279,7 @@ DEPENDENCIES
   foundation-rails
   friendly_id
   jquery-rails
-  passenger
+  passenger (= 5.1.1)
   pg (= 0.15)
   poltergeist
   pry-rails

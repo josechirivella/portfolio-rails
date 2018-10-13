@@ -14,7 +14,7 @@ gem 'rails_admin'
 gem 'dotenv-rails'
 gem 'therubyracer'
 
-gem 'passenger', group: :production
+gem 'passenger', '5.1.1', group: :production
 gem 'friendly_id'
 # gem 'spring'
 # Assets
