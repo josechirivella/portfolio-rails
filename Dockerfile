@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.4.4
 
 RUN apt-get update -qq && apt-get -y upgrade && apt-get install -y build-essential
 RUN apt-get install -y nodejs

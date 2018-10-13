@@ -1,18 +1,20 @@
-db:
-  image: postgres
-  ports:
+version: '3'
+services:
+  db:
+    image: postgres
+    ports:
     - "5432:5432"
-  expose:
-  - "5432"
+    expose:
+    - "5432"
 
-web:
-  build: .
-  command: bin/rails server --port 3000 --binding 0.0.0.0
-  ports:
+  web:
+    build: .
+    command: bin/rails server --port 3000 --binding 0.0.0.0
+    ports:
     - "3000:80"
-  links:
+    links:
     - db
-  volumes:
+    volumes:
     - .:/portfolio-rails
-  expose:
-  - "3000"
+    expose:
+    - "3000"

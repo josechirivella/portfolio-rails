@@ -6,6 +6,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara/rails'
 require 'capybara/poltergeist'
+require 'shoulda/matchers'
 
 Capybara.server_port = 31337
 Capybara.current_driver = :poltergeist
@@ -34,6 +35,12 @@ class ActionController::TestCase
     assert assigns[model_name], "Should have a #{model_name}"
     assert assigns[model_name].persisted?, "#{model_name} should be persisted"
   end
+end
+
+Shoulda::Matchers.configure do |config|
+	config.integrate do |with|
+		with.library :rails
+	end
 end
 
 class ActionDispatch::IntegrationTest

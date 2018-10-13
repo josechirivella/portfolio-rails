@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.4.4'
 
-gem 'rails', '4.2.4'
-gem 'pg'
+gem 'rails', '4.2.10'
+gem 'pg', '0.15'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'rails_12factor', group: :production
@@ -12,8 +12,9 @@ gem 'devise'
 gem 'bcrypt'
 gem 'rails_admin'
 gem 'dotenv-rails'
+gem 'therubyracer'
 
-gem 'passenger'
+gem 'passenger', '5.1.1', group: :production
 gem 'friendly_id'
 # gem 'spring'
 # Assets
