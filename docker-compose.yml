@@ -1,18 +1,18 @@
-db:
-  image: postgres
-  ports:
-    - "5432:5432"
-  expose:
-  - "5432"
+version: '3.9'
+services:
+  db:
+    image: postgres:10-alpine
+    environment:
+      POSTGRES_PASSWORD: password
+    ports:
+      - '5432:5432'
 
-web:
-  build: .
-  command: bin/rails server --port 3000 --binding 0.0.0.0
-  ports:
-    - "3000:80"
-  links:
-    - db
-  volumes:
-    - .:/portfolio-rails
-  expose:
-  - "3000"
+  web:
+    build: .
+    command: bin/rails server --port 3000 --binding 0.0.0.0
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    volumes:
+      - .:/portfolio-rails
